@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4424179b83eb22107f44871c7eda1e67" extends="sys_import_set_row" label="Citizens Details" max_length="40" name="x_snc_citizenfee_0_citizens_details" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short Description" label="Short Description" max_length="44" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Assigned Department" label="Assigned Department" max_length="40" name="u_assigned_department" type="string"/>
+    </element>
+</database>

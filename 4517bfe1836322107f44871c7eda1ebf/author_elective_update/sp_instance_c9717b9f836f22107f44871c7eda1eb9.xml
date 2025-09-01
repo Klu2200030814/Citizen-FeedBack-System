@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>success</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">b2796fd3836f22107f44871c7eda1e7c</sp_column>
+        <sp_widget display_value="SC Catalog Item Deprecated">0fd6a6f247230200ba13a5554ee490b3</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 16:24:56</sys_created_on>
+        <sys_id>c9717b9f836f22107f44871c7eda1eb9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sp_instance_c9717b9f836f22107f44871c7eda1eb9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 16:26:25</sys_updated_on>
+        <title/>
+        <url>citizen</url>
+        <widget_parameters><![CDATA[{
+	"show_add_cart_button": {
+		"value": "",
+		"displayValue": ""
+	},
+	"url": {
+		"value": "citizen",
+		"displayValue": "citizen"
+	},
+	"page": {
+		"value": "8ae82bd3836f22107f44871c7eda1e07",
+		"displayValue": "citizen_complaints"
+	},
+	"table": {
+		"value": "f418f765836322107f44871c7eda1e07",
+		"displayValue": "citizen"
+	},
+	"auto_redirect": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=c9717b9f836f22107f44871c7eda1eb9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</application>
+        <file_path/>
+        <instance_id>3aa94151979f66905382ff671153af18</instance_id>
+        <instance_name>mav-aug-7844-0031</instance_name>
+        <name>sp_instance_c9717b9f836f22107f44871c7eda1eb9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;success&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;b2796fd3836f22107f44871c7eda1e7c&lt;/sp_column&gt;&lt;sp_widget display_value="SC Catalog Item Deprecated"&gt;0fd6a6f247230200ba13a5554ee490b3&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-29 16:24:56&lt;/sys_created_on&gt;&lt;sys_id&gt;c9717b9f836f22107f44871c7eda1eb9&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_c9717b9f836f22107f44871c7eda1eb9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-29 16:26:25&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url&gt;citizen&lt;/url&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"show_add_cart_button": {
+		"value": "",
+		"displayValue": ""
+	},
+	"url": {
+		"value": "citizen",
+		"displayValue": "citizen"
+	},
+	"page": {
+		"value": "8ae82bd3836f22107f44871c7eda1e07",
+		"displayValue": "citizen_complaints"
+	},
+	"table": {
+		"value": "f418f765836322107f44871c7eda1e07",
+		"displayValue": "citizen"
+	},
+	"auto_redirect": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c9717b9f836f22107f44871c7eda1eb9"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1850668575</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>4117bfe1836322107f44871c7eda1ec2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 16:26:25</sys_created_on>
+        <sys_id>cfc1f7df836f22107f44871c7eda1e1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198f6a6d5650000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 16:26:25</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>f6c1f7df016f221020a420887bef661f</update_guid>
+        <update_guid_history>f6c1f7df016f221020a420887bef661f:-1850668575,5ea13bdfac6f2210fb9236f446bbe2aa:-1852665906,8f91f7df1e6f2210a091489d99b1d941:431561612,e191fb9f196f2210613d111e9257e2ce:849009131,d1717b9fd26f22107fd95c272db257bb:-1690426261</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2c62fbdf836f22107f44871c7eda1efb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 16:28:59</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>b4175da4f3f144f7a9d25292da1c85d1</sys_id>
+        <sys_metadata>c9717b9f836f22107f44871c7eda1eb9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_scope_delete display_value="">d5d15be73fd04fe0ab585c39f5d9a400</sys_scope_delete>
+        <sys_update_name>sp_instance_c9717b9f836f22107f44871c7eda1eb9</sys_update_name>
+        <sys_update_version display_value="sp_instance_c9717b9f836f22107f44871c7eda1eb9">cfc1f7df836f22107f44871c7eda1e1f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 16:28:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

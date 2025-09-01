@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_citizenfee_0.Dept Head" name="x_snc_citizenfee_0.Dept Head">f063b0bd836722107f44871c7eda1edc</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-24 10:44:35</sys_created_on>
+        <sys_id>b693b4bd836722107f44871c7eda1e87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f063b0bd836722107f44871c7eda1edc</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sys_embedded_help_role_b693b4bd836722107f44871c7eda1e87</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-24 10:44:35</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

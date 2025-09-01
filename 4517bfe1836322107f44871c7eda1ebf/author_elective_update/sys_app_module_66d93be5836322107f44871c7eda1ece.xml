@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="CitizenTable">3f97fb25836322107f44871c7eda1ef2</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>citizens</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_citizenfee_0_citizen</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_snc_citizenfee_0.citizen_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-24 06:32:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>66d93be5836322107f44871c7eda1ece</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>citizens</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sys_app_module_66d93be5836322107f44871c7eda1ece</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-24 06:32:15</sys_updated_on>
+        <timeline_page/>
+        <title>citizens</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</application>
+        <file_path/>
+        <instance_id>3aa94151979f66905382ff671153af18</instance_id>
+        <instance_name>mav-aug-7844-0031</instance_name>
+        <name>sys_app_module_66d93be5836322107f44871c7eda1ece</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="CitizenTable">3f97fb25836322107f44871c7eda1ef2</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>citizens</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_snc_citizenfee_0_citizen</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_snc_citizenfee_0.citizen_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-24 06:32:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>66d93be5836322107f44871c7eda1ece</sys_id><sys_mod_count>0</sys_mod_count><sys_name>citizens</sys_name><sys_overrides/><sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package><sys_policy/><sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope><sys_update_name>sys_app_module_66d93be5836322107f44871c7eda1ece</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-24 06:32:15</sys_updated_on><timeline_page/><title>citizens</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>31893903</payload_hash>
+        <record_name>citizens</record_name>
+        <reverted_from/>
+        <source>4117bfe1836322107f44871c7eda1ec2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-24 06:32:15</sys_created_on>
+        <sys_id>2ed93be5836322107f44871c7eda1ed0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198dac70e2e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-24 06:32:15</sys_updated_on>
+        <type>Module</type>
+        <update_guid>22d93be53763221058f659d740051fd0</update_guid>
+        <update_guid_history>22d93be53763221058f659d740051fd0:31893903</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="citizens">c6036d8083f722107f44871c7eda1e5e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 13:58:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>073a892b3e9545a1ab27d7bb8dfe7019</sys_id>
+        <sys_metadata>66d93be5836322107f44871c7eda1ece</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>citizens</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_scope_delete display_value="">d5d15be73fd04fe0ab585c39f5d9a400</sys_scope_delete>
+        <sys_update_name>sys_app_module_66d93be5836322107f44871c7eda1ece</sys_update_name>
+        <sys_update_version display_value="sys_app_module_66d93be5836322107f44871c7eda1ece">2ed93be5836322107f44871c7eda1ed0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 13:58:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

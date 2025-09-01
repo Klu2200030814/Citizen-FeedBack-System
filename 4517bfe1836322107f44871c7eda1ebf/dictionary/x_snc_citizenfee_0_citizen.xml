@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f418f765836322107f44871c7eda1e07" label="citizen" max_length="40" name="x_snc_citizenfee_0_citizen" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element choice="3" label="Service Type" max_length="40" name="service_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Road / Street Maintenance" value="road_maintenance"/>
+                <element inactive_on_update="false" label="Water Supply" value="water_supply"/>
+                <element inactive_on_update="false" label="Gas Supply" value="gas_supply"/>
+                <element inactive_on_update="false" label="Road Safety / Signals" value="road_safety"/>
+                <element inactive_on_update="false" label="Natural Disaster Response" value="natural_disaster"/>
+                <element inactive_on_update="false" label="Fire &amp; Safety" value="fire_safety"/>
+                <element inactive_on_update="false" label="Electricity / Power" value="electricity_power"/>
+                <element inactive_on_update="false" label="Sanitation / Drainage" value="sanitation_drainage"/>
+                <element inactive_on_update="false" label="Police / Law &amp; Order" value="police_law_order"/>
+                <element inactive_on_update="false" label="Schools / Colleges" value="schools_colleges"/>
+                <element inactive_on_update="false" label="Welfare Schemes" value="welfare_schemes"/>
+                <element inactive_on_update="false" label="Public Transport" value="public_transport"/>
+                <element inactive_on_update="false" label="Ambulance Services" value="ambulance_services"/>
+                <element inactive_on_update="false" label="Public Toilets" value="public_toilets"/>
+                <element inactive_on_update="false" label="Street Lighting" value="street_lighting"/>
+                <element inactive_on_update="false" label="Garbage collection" value="garbage_collection"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="10000" name="description" type="string"/>
+        <element label="AssignedTo" max_length="32" name="assignedto" reference="sys_user" type="reference"/>
+        <element label="Location" max_length="1000" name="location" reference="cmn_location" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" default="open" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Closed" value="closed"/>
+                <element inactive_on_update="false" label="Open" value="open"/>
+                <element inactive_on_update="false" label="In Progess" value="inprogess"/>
+            </choice>
+        </element>
+        <element choice="1" default="High" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" value="low"/>
+                <element inactive_on_update="false" label="Medium" value="medium"/>
+                <element inactive_on_update="false" label="High" value="high"/>
+            </choice>
+        </element>
+        <element choice="3" label="FeedBack Type" max_length="40" name="feedback_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Complaint" value="complaint"/>
+                <element inactive_on_update="false" label="Suggestion" value="suggestion"/>
+                <element inactive_on_update="false" label="Feedback" value="feedback"/>
+                <element inactive_on_update="false" label="Request" value="request"/>
+            </choice>
+        </element>
+        <element label="E-mail" max_length="100" name="e_mail" type="string_full_utf8"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Assigned Dept" max_length="32" name="assigned_dept" reference="cmn_department" type="reference"/>
+        <element label="PhoneNumber" max_length="40" name="phonenumber" type="phone_number_e164"/>
+        <index name="index">
+            <element name="assigned_dept"/>
+        </index>
+        <index name="index2">
+            <element name="assignedto"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

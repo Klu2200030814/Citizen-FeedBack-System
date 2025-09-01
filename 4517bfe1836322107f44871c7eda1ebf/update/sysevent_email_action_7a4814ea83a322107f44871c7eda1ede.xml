@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_snc_citizenfee_0_citizen</collection>
+        <condition table="x_snc_citizenfee_0_citizen">assigned_deptISNOTEMPTY^EQ<item endquery="false" field="assigned_dept" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>// Get fields from the triggering record<br>var name = fd_data.trigger.current.name;<br>var feedbackType = fd_data.trigger.current.feedback_type;<br>var serviceType = fd_data.trigger.current.service_type;<br>var assignedDept = fd_data.trigger.current.assigned_dept;<br>var assignedto = fd_data.trigger.current.assignedto;<br>var number = fd_data.trigger.current.number;<br>var status = fd_data.trigger.current.status;<br>var priority = fd_data.trigger.current.priority;</p>
+<p>// Build the HTML email body<br>var body = `<br>&lt;!doctype html&gt;<br>&lt;html lang="en"&gt;<br>&nbsp; &lt;head&gt;<br>&nbsp; &nbsp; &lt;meta charset="utf-8"&gt;<br>&nbsp; &nbsp; &lt;title&gt;Ticket Update&lt;/title&gt;<br>&nbsp; &lt;/head&gt;<br>&nbsp; &lt;body style="font-family: Arial, Helvetica, sans-serif; background-color: #f6f7fb; margin:0; padding:20px;"&gt;<br>&nbsp; &nbsp; &lt;table width="100%" cellpadding="0" cellspacing="0" role="presentation"&gt;<br>&nbsp; &nbsp; &nbsp; &lt;tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;td align="center"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;table width="600" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.08); overflow:hidden;"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Header --&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="padding:20px; background:#168AFF; color:#ffffff; text-align:left;"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 style="margin:0; font-size:20px;"&gt;Citizen Service Team&lt;/h2&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Body --&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="padding:24px; color:#333333;"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p style="margin:0 0 12px 0;"&gt;Hello &lt;strong&gt;${name}&lt;/strong&gt;,&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p style="margin:0 0 12px 0;"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; We have received your &lt;strong&gt;${feedbackType}&lt;/strong&gt; regarding &lt;strong&gt;${serviceType}&lt;/strong&gt;.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The current status of your ticket is &lt;strong&gt;${status}&lt;/strong&gt;.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;table cellpadding="8" cellspacing="0" width="100%" role="presentation" style="margin-top:16px; border-collapse:collapse;"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="background:#f2f5fb; border:1px solid #e6eefc; width:180px;"&gt;&lt;strong&gt;Ticket Number&lt;/strong&gt;&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="border:1px solid #e6eefc;"&gt;${number}&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="background:#f2f5fb; border:1px solid #e6eefc;"&gt;&lt;strong&gt;Current Status&lt;/strong&gt;&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="border:1px solid #e6eefc;"&gt;${status}&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="background:#f2f5fb; border:1px solid #e6eefc;"&gt;&lt;strong&gt;Priority&lt;/strong&gt;&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="border:1px solid #e6eefc;"&gt;${priority}&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="background:#f2f5fb; border:1px solid #e6eefc;"&gt;&lt;strong&gt;Department&lt;/strong&gt;&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="border:1px solid #e6eefc;"&gt;${assignedDept}&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="background:#f2f5fb; border:1px solid #e6eefc;"&gt;&lt;strong&gt;Assigned To&lt;/strong&gt;&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="border:1px solid #e6eefc;"&gt;${assignedto}&lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/table&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p style="margin:16px 0 0 0;"&gt;If you need to provide more information or want to discuss this ticket, reply to this email or visit the Citizen Service Portal.&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p style="margin:18px 0 0 0;"&gt;Thank you,&lt;br&gt;&lt;strong&gt;Citizen Service Team&lt;/strong&gt;&lt;/p&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Footer --&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td style="padding:12px 20px; background:#f4f6fb; color:#6b7280; font-size:12px; text-align:center;"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; This is an automated message &mdash; please do not reply to this email.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/table&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/td&gt;<br>&nbsp; &nbsp; &nbsp; &lt;/tr&gt;<br>&nbsp; &nbsp; &lt;/table&gt;<br>&nbsp; &lt;/body&gt;<br>&lt;/html&gt;<br>`;</p>
+<p>return body;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Application Status Email</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>e_mail</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject/>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:45:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a4814ea83a322107f44871c7eda1ede</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Application Status Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sysevent_email_action_7a4814ea83a322107f44871c7eda1ede</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:43:46</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>7a4814ea83a322107f44871c7eda1ede</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:46:09</sys_created_on>
+        <sys_id>7289982e83a322107f44871c7eda1e65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 16:46:09</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>0</order>
+        <published_ref/>
+        <question display_value="Status">11a52a53832b22107f44871c7eda1e90</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 10:53:43</sys_created_on>
+        <sys_id>5da52a53832b22107f44871c7eda1e9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Closed</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>question_choice_5da52a53832b22107f44871c7eda1e9f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 10:53:43</sys_updated_on>
+        <text>Closed</text>
+        <value>closed</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=5da52a53832b22107f44871c7eda1e9f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</application>
+        <file_path/>
+        <instance_id>3aa94151979f66905382ff671153af18</instance_id>
+        <instance_name>mav-aug-7844-0031</instance_name>
+        <name>question_choice_5da52a53832b22107f44871c7eda1e9f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>0</order><published_ref/><question display_value="Status">11a52a53832b22107f44871c7eda1e90</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-29 10:53:43</sys_created_on><sys_id>5da52a53832b22107f44871c7eda1e9f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Closed</sys_name><sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package><sys_policy/><sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope><sys_update_name>question_choice_5da52a53832b22107f44871c7eda1e9f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-29 10:53:43</sys_updated_on><text>Closed</text><value>closed</value></question_choice><fx_price action="delete_multiple" query="id=5da52a53832b22107f44871c7eda1e9f"/></record_update>]]></payload>
+        <payload_hash>1324104660</payload_hash>
+        <record_name>Closed</record_name>
+        <reverted_from/>
+        <source>4117bfe1836322107f44871c7eda1ec2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 10:53:43</sys_created_on>
+        <sys_id>9da52a53832b22107f44871c7eda1ea6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198f5763c5f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 10:53:43</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>91a52a53432b221094bd58258caab3a6</update_guid>
+        <update_guid_history>91a52a53432b221094bd58258caab3a6:1324104660</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Closed">42c7ea17832b22107f44871c7eda1eb5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 11:03:03</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>0ce2ae4d564341c086362cb43f069000</sys_id>
+        <sys_metadata>5da52a53832b22107f44871c7eda1e9f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Closed</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_scope_delete display_value="">d5d15be73fd04fe0ab585c39f5d9a400</sys_scope_delete>
+        <sys_update_name>question_choice_5da52a53832b22107f44871c7eda1e9f</sys_update_name>
+        <sys_update_version display_value="question_choice_5da52a53832b22107f44871c7eda1e9f">9da52a53832b22107f44871c7eda1ea6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 11:03:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

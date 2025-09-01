@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_citizenfee_0_citizentable</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Description to Department</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    if (!current.assigned_department) {
+        var shortDesc = (current.short_description || '').toLowerCase();
+
+        var deptSysId = '';
+        var deptId='';
+        if (shortDesc.indexOf("electricity") > -1 || shortDesc.indexOf("power") > -1) {
+            deptSysId = '54ea20f1836722107f44871c7eda1eaf';
+			deptId = '62826bf03710200044e0bfc8bcbe5df1';
+        } else if (shortDesc.indexOf("fire") > -1 || shortDesc.indexOf("safety") > -1) {
+            deptSysId = '663b68f1836722107f44871c7eda1efa';
+			deptId='d2826bf03710200044e0bfc8bcbe5dc9';
+        } else if (shortDesc.indexOf("garbage") > -1 || shortDesc.indexOf("waste") > -1 || shortDesc.indexOf("trash") > -1) {
+            deptSysId = 'abdb6075836722107f44871c7eda1e6b';
+			deptId='f282abf03710200044e0bfc8bcbe5d1b';
+        } else if (shortDesc.indexOf("gas") > -1) {
+            deptSysId = '27fa28f1836722107f44871c7eda1ef9';
+			deptId='f5826bf03710200044e0bfc8bcbe5d2c';
+        } else if (shortDesc.indexOf("disaster") > -1 || shortDesc.indexOf("response") > -1) {
+            deptSysId = '922b68f1836722107f44871c7eda1eec';
+			deptId='d2826bf03710200044e0bfc8bcbe5dd2';
+        } else if (shortDesc.indexOf("police") > -1 || shortDesc.indexOf("law") > -1 || shortDesc.indexOf("order") > -1) {
+            deptSysId = 'a46be435836722107f44871c7eda1e13';
+			deptId='fa82abf03710200044e0bfc8bcbe5d31';
+        } else if (shortDesc.indexOf("toilet") > -1 || shortDesc.indexOf("public toilet") > -1) {
+            deptSysId = '6a826bf03710200044e0bfc8bcbe5de3';
+        } else if (shortDesc.indexOf("ambulance") > -1 || shortDesc.indexOf("emergency") > -1) {
+            deptSysId = '639be0b1836722107f44871c7eda1e2a';
+			deptId='3e82abf03710200044e0bfc8bcbe5d24';
+        } else if (shortDesc.indexOf("transport") > -1 || shortDesc.indexOf("bus") > -1) {
+            deptSysId = '6b8ba835836722107f44871c7eda1e22';
+			deptId='6e826bf03710200044e0bfc8bcbe5ddc';
+        } else if (shortDesc.indexOf("road") > -1 || shortDesc.indexOf("street") > -1 || shortDesc.indexOf("maintenance") > -1) {
+            deptSysId = '08db2075836722107f44871c7eda1e1c';
+			deptId='02826bf03710200044e0bfc8bcbe5d76';
+        } else if (shortDesc.indexOf("signal") > -1 || shortDesc.indexOf("safety") > -1) {
+            deptSysId = '151ba4f1836722107f44871c7eda1e2f';
+			deptId='0e826bf03710200044e0bfc8bcbe5d8e';
+        } else if (shortDesc.indexOf("sanitation") > -1 || shortDesc.indexOf("drainage") > -1) {
+            deptSysId = '7b4be8f1836722107f44871c7eda1e1b';
+			deptId='4a826bf03710200044e0bfc8bcbe5d3f';
+        } else if (shortDesc.indexOf("school") > -1 || shortDesc.indexOf("college") > -1 || shortDesc.indexOf("education") > -1) {
+            deptSysId = '487ba8f1836722107f44871c7eda1ea9';
+			deptId='0a826bf03710200044e0bfc8bcbe5d71';
+        } else if (shortDesc.indexOf("water") > -1 || shortDesc.indexOf("supply") > -1) {
+            deptSysId = '94292471836722107f44871c7eda1ec6';
+			deptId='4369e831836722107f44871c7eda1e29';
+        } else if (shortDesc.indexOf("street") > -1 || shortDesc.indexOf("light") > -1) {
+            deptSysId = '15cbac35836722107f44871c7eda1e6a';
+			deptId='fe82abf03710200044e0bfc8bcbe5d21';
+        } else if (shortDesc.indexOf("welfare") > -1 || shortDesc.indexOf("scheme") > -1) {
+            deptSysId = '377be435836722107f44871c7eda1e9c';
+			deptId='377be435836722107f44871c7eda1e9c';
+        }
+
+        // If we found a matching department
+        if (deptSysId) {
+            current.assigned_department = deptSysId;
+        }
+		if(deptId){
+			current.assigned_to=deptId;
+		}
+    }
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 10:31:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>12917044833722107f44871c7eda1e7e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Description to Department</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sys_script_12917044833722107f44871c7eda1e7e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 11:18:43</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=12917044833722107f44871c7eda1e7e"/>
+</record_update>

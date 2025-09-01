@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog">
+    <sc_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Catalog for all citizen complaints, requests, feedback, and Suggestions.</description>
+        <desktop_continue_shopping/>
+        <desktop_home_page/>
+        <desktop_image/>
+        <editors/>
+        <enable_wish_list>false</enable_wish_list>
+        <manager/>
+        <sys_class_name>sc_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 02:09:59</sys_created_on>
+        <sys_id>e937312b832322107f44871c7eda1e03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Citizen Service</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sc_catalog_e937312b832322107f44871c7eda1e03</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 02:09:59</sys_updated_on>
+        <title>Citizen Service</title>
+    </sc_catalog>
+    <sys_translated_text action="delete_multiple" query="documentkey=e937312b832322107f44871c7eda1e03"/>
+</record_update>

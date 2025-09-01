@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <allow_edit>false</allow_edit>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category/>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>CitizenRecord</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture/>
+        <post_insert_script><![CDATA[/**
+* This script is executed after the record is generated. 
+* `current` Is the GlideRecord produced by Record Producer. Use `current.update()` to update the record
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]></post_insert_script>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=94a5ea13832b22107f44871c7eda1edc&amp;sysparm_preview=true", "summary");</preview>
+        <published_ref/>
+        <recurring_frequency/>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <save_options/>
+        <save_script><![CDATA[/**
+* This script is executed at every step save in Catalog Builder. 
+* This script is executed before `Script` is executed.
+* `current` Is the GlideRecord produced by Record Producer. 
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]></save_script>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <script><![CDATA[(function producerScript(current, producer) {
+    current.name = producer.name;
+    current.e_mail = producer.email;
+    current.phonenumber = producer.phonenumber;
+    current.location = producer.location;
+    current.short_description = producer.short_description;
+    current.description = producer.description;
+    current.feedback_type = producer.feedback_type;
+})(current, producer);
+]]></script>
+        <short_description>Taking feedback, Request, complaints from the public</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 10:53:39</sys_created_on>
+        <sys_id>94a5ea13832b22107f44871c7eda1edc</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>CitizenRecord</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sc_cat_item_producer_94a5ea13832b22107f44871c7eda1edc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 02:28:48</sys_updated_on>
+        <table_name>x_snc_citizenfee_0_citizentable</table_name>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <version>30</version>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="DELETE" query="documentkey=94a5ea13832b22107f44871c7eda1edc"/>
+    <fx_price action="DELETE" query="id=94a5ea13832b22107f44871c7eda1edc"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</application>
+        <file_path/>
+        <instance_id>3aa94151979f66905382ff671153af18</instance_id>
+        <instance_name>mav-aug-7844-0031</instance_name>
+        <name>sc_cat_item_producer_94a5ea13832b22107f44871c7eda1edc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sc_cat_item_producer"&gt;&lt;sc_cat_item_producer action="INSERT_OR_UPDATE"&gt;&lt;access_type&gt;restricted&lt;/access_type&gt;&lt;active&gt;true&lt;/active&gt;&lt;allow_edit&gt;false&lt;/allow_edit&gt;&lt;availability&gt;on_desktop&lt;/availability&gt;&lt;billable&gt;false&lt;/billable&gt;&lt;can_cancel&gt;false&lt;/can_cancel&gt;&lt;category/&gt;&lt;checked_out/&gt;&lt;cost&gt;0&lt;/cost&gt;&lt;custom_cart/&gt;&lt;delivery_plan display_value="DEFAULT"&gt;523da512c611228900811a37c97c2014&lt;/delivery_plan&gt;&lt;delivery_plan_script/&gt;&lt;delivery_time&gt;1970-01-03 00:00:00&lt;/delivery_time&gt;&lt;description/&gt;&lt;display_price_property&gt;non_zero&lt;/display_price_property&gt;&lt;entitlement_script/&gt;&lt;flow_designer_flow/&gt;&lt;fulfillment_automation_level&gt;unspecified&lt;/fulfillment_automation_level&gt;&lt;group/&gt;&lt;hide_sp&gt;false&lt;/hide_sp&gt;&lt;icon/&gt;&lt;ignore_price&gt;true&lt;/ignore_price&gt;&lt;image/&gt;&lt;location/&gt;&lt;make_item_non_conversational&gt;false&lt;/make_item_non_conversational&gt;&lt;mandatory_attachment&gt;false&lt;/mandatory_attachment&gt;&lt;meta/&gt;&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;&lt;mobile_picture/&gt;&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;&lt;model/&gt;&lt;name&gt;CitizenRecord&lt;/name&gt;&lt;no_attachment_v2&gt;false&lt;/no_attachment_v2&gt;&lt;no_cart&gt;false&lt;/no_cart&gt;&lt;no_cart_v2&gt;false&lt;/no_cart_v2&gt;&lt;no_delivery_time_v2&gt;false&lt;/no_delivery_time_v2&gt;&lt;no_order&gt;false&lt;/no_order&gt;&lt;no_order_now&gt;false&lt;/no_order_now&gt;&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;&lt;no_quantity&gt;false&lt;/no_quantity&gt;&lt;no_quantity_v2&gt;false&lt;/no_quantity_v2&gt;&lt;no_save_as_draft&gt;false&lt;/no_save_as_draft&gt;&lt;no_search&gt;false&lt;/no_search&gt;&lt;no_wishlist_v2&gt;false&lt;/no_wishlist_v2&gt;&lt;omit_price&gt;false&lt;/omit_price&gt;&lt;order&gt;0&lt;/order&gt;&lt;ordered_item_link/&gt;&lt;owner display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/owner&gt;&lt;picture/&gt;&lt;post_insert_script&gt;&lt;![CDATA[/**
+* This script is executed after the record is generated. 
+* `current` Is the GlideRecord produced by Record Producer. Use `current.update()` to update the record
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]&gt;&lt;/post_insert_script&gt;&lt;preview&gt;JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;amp;sysparm_id=94a5ea13832b22107f44871c7eda1edc&amp;amp;sysparm_preview=true", "summary");&lt;/preview&gt;&lt;published_ref/&gt;&lt;recurring_frequency/&gt;&lt;redirect_url&gt;generated_record&lt;/redirect_url&gt;&lt;request_method/&gt;&lt;roles/&gt;&lt;save_options/&gt;&lt;save_script&gt;&lt;![CDATA[/**
+* This script is executed at every step save in Catalog Builder. 
+* This script is executed before `Script` is executed.
+* `current` Is the GlideRecord produced by Record Producer. 
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]&gt;&lt;/save_script&gt;&lt;sc_catalogs/&gt;&lt;sc_ic_item_staging/&gt;&lt;sc_ic_version/&gt;&lt;sc_template/&gt;&lt;script&gt;&lt;![CDATA[(function producerScript(current, producer) {
+    current.name = producer.name;
+    current.e_mail = producer.email;
+    current.phonenumber = producer.phonenumber;
+    current.location = producer.location;
+    current.short_description = producer.short_description;
+    current.description = producer.description;
+    current.feedback_type = producer.feedback_type;
+})(current, producer);
+]]&gt;&lt;/script&gt;&lt;short_description&gt;Taking feedback, Request, complaints from the public&lt;/short_description&gt;&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;&lt;start_closed&gt;false&lt;/start_closed&gt;&lt;state/&gt;&lt;sys_class_name&gt;sc_cat_item_producer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-29 10:53:39&lt;/sys_created_on&gt;&lt;sys_id&gt;94a5ea13832b22107f44871c7eda1edc&lt;/sys_id&gt;&lt;sys_mod_count&gt;29&lt;/sys_mod_count&gt;&lt;sys_name&gt;CitizenRecord&lt;/sys_name&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_producer_94a5ea13832b22107f44871c7eda1edc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 02:28:48&lt;/sys_updated_on&gt;&lt;table_name&gt;x_snc_citizenfee_0_citizentable&lt;/table_name&gt;&lt;taxonomy_topic/&gt;&lt;template/&gt;&lt;template_manager_roles/&gt;&lt;type&gt;item&lt;/type&gt;&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;&lt;vendor/&gt;&lt;version&gt;30&lt;/version&gt;&lt;view/&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;workflow/&gt;&lt;/sc_cat_item_producer&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=94a5ea13832b22107f44871c7eda1edc"/&gt;&lt;fx_price action="delete_multiple" query="id=94a5ea13832b22107f44871c7eda1edc"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>933532801</payload_hash>
+        <record_name>CitizenRecord</record_name>
+        <reverted_from/>
+        <source>4117bfe1836322107f44871c7eda1ec2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 02:28:48</sys_created_on>
+        <sys_id>07ab71ef832322107f44871c7eda1e96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198f8ce55f90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 02:28:48</sys_updated_on>
+        <type>Record Producer</type>
+        <update_guid>cbab71efd723221026ab2a54f1172195</update_guid>
+        <update_guid_history>cbab71efd723221026ab2a54f1172195:933532801,a3b966571c2b2210bd7d00bf53b657f2:1750247067,52c7ea17d62b2210538752df527f75f7:2017027175,5ac7ea17772b22108d20c097518d88e7:-126456986,52c7ea17452b221034dd1768d7e75fd8:2025026149,4ac7ea17022b22100d65a60264d44dc8:-118458012,46c7ea17ff2b2210ba8ad7ac0fb9bca9:2033025123,55a52a53bc2b2210c15c1b63147f25b3:-110459038,1da52a53fa2b2210b2b055cafb3fc7ab:2041024097,d1a52a53392b221089bdfe9887e4bca4:-102460064,d9a52a53782b2210b986264231b06795:-14471350,11a52a53a12b221006e6f475c18a4e8d:2137011785,d5a52a53782b2210258fa9ffa5d00c85:-6472376,9da52a538a2b2210c11166b2930ace7d:2145010759,d9a52a53202b22108a2761a49ae13963:1526598,05a52a53302b22101dd757afc26b1755:-2141957563,81a52a534b2b2210cdeb3097fb385d47:9525572,85a52a53622b221087c282b6539b3b3e:-2133958589,4da52a53dd2b2210137b6e7eadc22536:17524546,4da52a53862b22100d6c08f6eb4e732e:-2125959615,3ca52a537b2b221026aea7b18a5ac221:-1745572183,f8a52a53be2b2210319458a72f779914:405910952,fca52a53bf2b221060c2ed53d523e907:-1737573209,38a5e653582b2210ba189b26a7dc16fb:413909926,b4a5e653b32b2210babe93efb7babcef:-1729574235,f8a5e653f22b22101faf1c6a6f4630ca:421908900,e0a5e653742b22109f3d73f7ddcb94bf:-1721575261,e4a5e653bd2b22109aaf79a9272c0bb2:429907874,64a5e653c62b2210c5625218b6ddeba0:-1713576287,eca5e653792b2210ee29230a71cc569a:-1712151889</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CitizenRecord">43ab71ef832322107f44871c7eda1e99</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 02:28:49</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_producer">sc_cat_item_producer</sys_db_object>
+        <sys_id>41865e4e43e640c4ab317a7c12c858f1</sys_id>
+        <sys_metadata>94a5ea13832b22107f44871c7eda1edc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CitizenRecord</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_parent display_value="CitizenTable">b2777b25836322107f44871c7eda1e20</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_scope_delete display_value="">d5d15be73fd04fe0ab585c39f5d9a400</sys_scope_delete>
+        <sys_update_name>sc_cat_item_producer_94a5ea13832b22107f44871c7eda1edc</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_producer_94a5ea13832b22107f44871c7eda1edc">07ab71ef832322107f44871c7eda1e96</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 02:28:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

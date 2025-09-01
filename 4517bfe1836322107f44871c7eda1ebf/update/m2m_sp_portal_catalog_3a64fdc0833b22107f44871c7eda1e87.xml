@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_catalog">
+    <m2m_sp_portal_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sp_portal display_value="Citizen Service Portal">85280ea383a322107f44871c7eda1e6e</sp_portal>
+        <sys_class_name>m2m_sp_portal_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 15:14:05</sys_created_on>
+        <sys_id>3a64fdc0833b22107f44871c7eda1e87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Citizen Service Portal</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>m2m_sp_portal_catalog_3a64fdc0833b22107f44871c7eda1e87</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 15:14:05</sys_updated_on>
+    </m2m_sp_portal_catalog>
+</record_update>

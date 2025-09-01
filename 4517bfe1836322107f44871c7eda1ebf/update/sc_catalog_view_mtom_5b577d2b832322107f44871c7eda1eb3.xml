@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="Citizen Service">e937312b832322107f44871c7eda1e03</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 02:09:59</sys_created_on>
+        <sys_id>5b577d2b832322107f44871c7eda1eb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Citizen Service.catalog_citizen_service</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_citizen_service">13577d2b832322107f44871c7eda1eb2</sys_portal_page>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_5b577d2b832322107f44871c7eda1eb3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 02:09:59</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>

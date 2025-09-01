@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allow read for all fields in x_snc_citizenfee_0_citizentable, for users with role x_snc_citizenfee_0.depthead, and if the ACL script returns true.</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_snc_citizenfee_0_citizentable.*</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[(function() {
+    var dept = current.assigned_department;
+    if (!dept) 
+        return false;
+    
+    var gr = new GlideRecord("cmn_department");
+    if (gr.get(dept)) {
+        return gr.dept_head == gs.getUserID();
+    }
+    return false;
+})();
+]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 12:39:44</sys_created_on>
+        <sys_id>647f8dcc837722107f44871c7eda1e8a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_snc_citizenfee_0_citizentable.*</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sys_security_acl_647f8dcc837722107f44871c7eda1e8a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 12:50:53</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</application>
+        <file_path/>
+        <instance_id>3aa94151979f66905382ff671153af18</instance_id>
+        <instance_name>mav-aug-7844-0031</instance_name>
+        <name>sys_security_acl_647f8dcc837722107f44871c7eda1e8a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description&gt;Allow read for all fields in x_snc_citizenfee_0_citizentable, for users with role x_snc_citizenfee_0.depthead, and if the ACL script returns true.&lt;/description&gt;&lt;local_or_existing&gt;Local&lt;/local_or_existing&gt;&lt;name&gt;x_snc_citizenfee_0_citizentable.*&lt;/name&gt;&lt;operation display_value="read"&gt;read&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    var dept = current.assigned_department;
+    if (!dept) 
+        return false;
+    
+    var gr = new GlideRecord("cmn_department");
+    if (gr.get(dept)) {
+        return gr.dept_head == gs.getUserID();
+    }
+    return false;
+})();
+]]&gt;&lt;/script&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-31 12:39:44&lt;/sys_created_on&gt;&lt;sys_id&gt;647f8dcc837722107f44871c7eda1e8a&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_snc_citizenfee_0_citizentable.*&lt;/sys_name&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_647f8dcc837722107f44871c7eda1e8a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-31 12:50:53&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>942383825</payload_hash>
+        <record_name>x_snc_citizenfee_0_citizentable.*</record_name>
+        <reverted_from/>
+        <source>4117bfe1836322107f44871c7eda1ec2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 12:50:53</sys_created_on>
+        <sys_id>99a359c083b722107f44871c7eda1ef9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199002e3b020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 12:50:53</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>51a359c0f7b722100f92e0224a4c6ff9</update_guid>
+        <update_guid_history>51a359c0f7b722100f92e0224a4c6ff9:942383825,ec62d98035b72210105eee7daa26143e:-339463294,ca119dcca87722102afeff34dbe4dff4:916849974</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 13:47:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>2d2ce7557c7745428ce52b0293d86399</sys_id>
+        <sys_metadata>647f8dcc837722107f44871c7eda1e8a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_citizenfee_0_citizentable.*</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_parent display_value="x_snc_citizenfee_0_citizentable">5ca73f25836322107f44871c7eda1e46</sys_parent>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_scope_delete display_value="">d5d15be73fd04fe0ab585c39f5d9a400</sys_scope_delete>
+        <sys_update_name>sys_security_acl_647f8dcc837722107f44871c7eda1e8a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_647f8dcc837722107f44871c7eda1e8a">99a359c083b722107f44871c7eda1ef9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 13:47:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

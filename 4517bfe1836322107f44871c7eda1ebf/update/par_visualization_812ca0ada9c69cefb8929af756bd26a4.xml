@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_visualization">
+    <par_visualization action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <certified>false</certified>
+        <description/>
+        <macroponent display_value="Pivot Table">06f6aacbd1818110f877d87436272684</macroponent>
+        <name>Number of Records are in Each FeedBack type</name>
+        <properties>{"applyDateRange":false,"bareBorder":false,"colorConfig":{"type":"default"},"dataSources":[{"allowRealTime":true,"dataCategories":["group","simple","trend"],"filterQuery":"","id":"dGFibGV4X3NuY19jaXRpemVuZmVlXzBfY2l0aXplbnRhYmxlMTc1NjY1NTY5ODI1NzY5MjgzMDg3LjA5NTQxMzM5","isDatabaseView":false,"preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"sourceType":"table","tableOrViewName":"x_snc_citizenfee_0_citizentable"}],"dateFormat":"default","emptyStateAlignment":"vertical-centered","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateHeading":"No data available.","emptyStateIllustration":"no-data","enableCustomEmptyState":false,"enableDrilldown":true,"enableRealTimeUpdate":false,"filterConfigurations":"@state.parFilters","followFilters":true,"freezeFirstColumn":false,"freezeFooter":false,"freezeHeader":true,"groupBy":[{"categoryIndex":0,"disableRanges":true,"groupBy":[{"dataSource":"dGFibGV4X3NuY19jaXRpemVuZmVlXzBfY2l0aXplbnRhYmxlMTc1NjY1NTY5ODI1NzY5MjgzMDg3LjA5NTQxMzM5","groupByField":"status","isChoice":false,"isPaBucket":false,"isRange":false}],"hideZeroValues":false,"maxNumberOfGroups":12,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":true},{"categoryIndex":1,"disableRanges":true,"groupBy":[{"dataSource":"dGFibGV4X3NuY19jaXRpemVuZmVlXzBfY2l0aXplbnRhYmxlMTc1NjY1NTY5ODI1NzY5MjgzMDg3LjA5NTQxMzM5","groupByField":"assigned_department","isChoice":false,"isPaBucket":false,"isRange":false}],"maxNumberOfGroups":"ALL"}],"headerTitle":"Number of Records are in Each FeedBack type","hideMatrixAggregate":false,"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGV4X3NuY19jaXRpemVuZmVlXzBfY2l0aXplbnRhYmxlMTc1NjY1NTY5ODI1NzY5MjgzMDg3LjA5NTQxMzM5","id":"ZEdGaWJHVjRYM051WTE5amFYUnBlbVZ1Wm1WbFh6QmZZMmwwYVhwbGJuUmhZbXhsTVRjMU5qWTFOVFk1T0RJMU56WTVNamd6TURnM0xqQTVOVFF4TXpNNTE3NTY2NTU2OTgyNTgyNzEyNTc4NS40ODM2NzkzODg=","numberFormat":{"customFormat":true,"abbreviationEnabled":true,"numberInTooltipsEnabled":true},"durationFormat":{"customFormat":false},"dateFormat":{"customFormat":false},"stringFormat":{"customFormat":false}}],"newReporting":true,"numberOfPeriods":3,"period":"M","scoreType":"latest","showAbsolutePeriod":false,"showAlternateColumnColors":false,"showAlternateRowColors":true,"showBorder":true,"showChange":false,"showChangeFrom":"previous","showChangePercentage":false,"showColumnAggregate":true,"showColumnDividers":false,"showComment":false,"showConfidenceBand":false,"showDataPassthrough":false,"showFilterIcon":true,"showFirstGroupAggregate":true,"showForecast":false,"showForecastRange":false,"showGapPercentage":false,"showHeader":true,"showHeaderSeparator":false,"showMaximumRange":false,"showMetricLabel":false,"showPivotExpanded":true,"showRowAggregate":true,"showRowDividers":false,"showSecondGroupAggregate":true,"showSparkline":false,"showSubAggregate":true,"showTarget":false,"showThreshold":false,"showTotalAggregate":true,"showTrend":false,"showZero":false,"sortBy":"choice","sortByOrder":"asc","telemetry":"null","truncateColumnHeader":true,"truncateFirstColumn":true,"wrapColumnHeader":false,"wrapTitle":false}</properties>
+        <requested_by/>
+        <scheduled_count>0</scheduled_count>
+        <sys_class_name>par_visualization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 15:52:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>812ca0ada9c69cefb8929af756bd26a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Number of Records are in Each FeedBack type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>par_visualization_812ca0ada9c69cefb8929af756bd26a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 15:55:00</sys_updated_on>
+        <type>Pivot Table</type>
+    </par_visualization>
+</record_update>

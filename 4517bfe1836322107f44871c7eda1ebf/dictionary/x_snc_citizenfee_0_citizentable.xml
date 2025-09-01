@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b2777b25836322107f44871c7eda1e20" label="CitizenTable" max_length="40" name="x_snc_citizenfee_0_citizentable" type="collection">
+        <element label="Location" max_length="1000" name="location" type="string"/>
+        <element label="Assigned Department" max_length="32" name="assigned_department" reference="cmn_department" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element choice="3" default="Open" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progess" value="inprogess"/>
+                <element inactive_on_update="false" label="Closed" value="closed"/>
+                <element inactive_on_update="false" label="Open" value="open"/>
+            </choice>
+        </element>
+        <element label="PhoneNumber" max_length="40" name="phonenumber" type="phone_number_e164"/>
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" value="high"/>
+                <element inactive_on_update="false" label="Medium" value="medium"/>
+                <element inactive_on_update="false" label="Low" value="low"/>
+            </choice>
+        </element>
+        <element choice="1" label="FeedBack Type" max_length="40" name="feedback_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Complaint" value="complaint"/>
+                <element inactive_on_update="false" label="Feedback" value="feedback"/>
+                <element inactive_on_update="false" label="Request" value="request"/>
+            </choice>
+        </element>
+        <element label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element label="E-mail" max_length="100" name="e_mail" type="string_full_utf8"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <index name="index">
+            <element name="assigned_department"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

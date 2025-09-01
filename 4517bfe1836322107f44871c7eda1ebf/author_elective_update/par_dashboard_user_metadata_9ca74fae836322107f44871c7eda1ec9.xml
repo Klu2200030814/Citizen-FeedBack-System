@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_user_metadata">
+    <par_dashboard_user_metadata action="DELETE">
+        <background_color/>
+        <cache_expiration_time>0</cache_expiration_time>
+        <card_bg_image/>
+        <created_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</created_by_user>
+        <created_on>2025-08-27 05:26:45</created_on>
+        <dashboard display_value="Citizen DashBoard">10a74fae836322107f44871c7eda1ec3</dashboard>
+        <edit_locked>{"sysId":"6816f79cc0a8016401c5a33be04be441","name":"System Administrator","avatar":"a5d3c898c3222010ae17dd981840dd8b.iix?t=small","lockedOn":"1756272428745"}</edit_locked>
+        <enable_data_cache>false</enable_data_cache>
+        <include_custom_insights>true</include_custom_insights>
+        <include_key_contributors>true</include_key_contributors>
+        <include_kpi_signals>true</include_kpi_signals>
+        <include_predictive_target>true</include_predictive_target>
+        <include_predictive_thresholds>true</include_predictive_thresholds>
+        <include_process_mining>true</include_process_mining>
+        <include_severity>true</include_severity>
+        <include_target>true</include_target>
+        <include_thresholds>true</include_thresholds>
+        <include_trends>true</include_trends>
+        <include_widget_notification>true</include_widget_notification>
+        <last_updated_on>2025-08-27 05:26:45</last_updated_on>
+        <po_project_id_list/>
+        <refresh_information>false</refresh_information>
+        <refresh_interval>-1</refresh_interval>
+        <requested_by_user/>
+        <schedule_repetition>false</schedule_repetition>
+        <show_insights_panel>true</show_insights_panel>
+        <sys_class_name>par_dashboard_user_metadata</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 05:26:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9ca74fae836322107f44871c7eda1ec9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>par_dashboard_user_metadata_9ca74fae836322107f44871c7eda1ec9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 05:27:08</sys_updated_on>
+        <updated_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</updated_by_user>
+        <use_custom_tab_colors>false</use_custom_tab_colors>
+    </par_dashboard_user_metadata>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</application>
+        <file_path/>
+        <instance_id>3aa94151979f66905382ff671153af18</instance_id>
+        <instance_name>mav-aug-7844-0031</instance_name>
+        <name>par_dashboard_user_metadata_9ca74fae836322107f44871c7eda1ec9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_user_metadata"><par_dashboard_user_metadata action="INSERT_OR_UPDATE"><background_color/><cache_expiration_time>0</cache_expiration_time><card_bg_image/><created_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</created_by_user><created_on>2025-08-27 05:26:45</created_on><dashboard display_value="Citizen DashBoard">10a74fae836322107f44871c7eda1ec3</dashboard><edit_locked>{"sysId":"6816f79cc0a8016401c5a33be04be441","name":"System Administrator","avatar":"a5d3c898c3222010ae17dd981840dd8b.iix?t=small","lockedOn":"1756272428745"}</edit_locked><enable_data_cache>false</enable_data_cache><include_custom_insights>true</include_custom_insights><include_key_contributors>true</include_key_contributors><include_kpi_signals>true</include_kpi_signals><include_predictive_target>true</include_predictive_target><include_predictive_thresholds>true</include_predictive_thresholds><include_process_mining>true</include_process_mining><include_severity>true</include_severity><include_target>true</include_target><include_thresholds>true</include_thresholds><include_trends>true</include_trends><include_widget_notification>true</include_widget_notification><last_updated_on>2025-08-27 05:26:45</last_updated_on><po_project_id_list/><refresh_information>false</refresh_information><refresh_interval>-1</refresh_interval><requested_by_user/><schedule_repetition>false</schedule_repetition><show_insights_panel>true</show_insights_panel><sys_class_name>par_dashboard_user_metadata</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-27 05:26:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9ca74fae836322107f44871c7eda1ec9</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package><sys_policy/><sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope><sys_update_name>par_dashboard_user_metadata_9ca74fae836322107f44871c7eda1ec9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-27 05:27:08</sys_updated_on><updated_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</updated_by_user><use_custom_tab_colors>false</use_custom_tab_colors></par_dashboard_user_metadata></record_update>]]></payload>
+        <payload_hash>1180950006</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>4117bfe1836322107f44871c7eda1ec2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 05:27:08</sys_created_on>
+        <sys_id>cab707ae836322107f44871c7eda1e08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198e9fe86e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 05:27:08</sys_updated_on>
+        <type>PAR Dashboard Metadata</type>
+        <update_guid>c2b707ae53632210cf05be32caf25908</update_guid>
+        <update_guid_history>c2b707ae53632210cf05be32caf25908:1180950006,61b7cfae176322104b27ae996f57ffdc:303968481,d8a74faeb26322106b0aa42b6a442acc:1800526226</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">24e8c72283a322107f44871c7eda1e85</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 05:32:14</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_user_metadata">par_dashboard_user_metadata</sys_db_object>
+        <sys_id>6f7fdb86a3c949da9d27bff7807c3361</sys_id>
+        <sys_metadata>9ca74fae836322107f44871c7eda1ec9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_scope_delete display_value="">d5d15be73fd04fe0ab585c39f5d9a400</sys_scope_delete>
+        <sys_update_name>par_dashboard_user_metadata_9ca74fae836322107f44871c7eda1ec9</sys_update_name>
+        <sys_update_version display_value="par_dashboard_user_metadata_9ca74fae836322107f44871c7eda1ec9">cab707ae836322107f44871c7eda1e08</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 05:32:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

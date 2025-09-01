@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_citizenfee_0_citizen</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Assigning Departments</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // Set priority based on feedback_type
+    if (current.feedback_type == "complaint" || current.feedback_type == "request") {
+        current.priority = "high";
+    } else if (current.feedback_type == "suggestion") {
+        current.priority = "medium";
+    } else if (current.feedback_type == "feedback") {
+        current.priority = "low";
+    }
+
+    // Map service_type to department name
+    var deptName = "";
+    switch (current.service_type) {
+        case "Water Supply":
+            deptName = "Water Supply";
+            break;
+        case "Electricity / Power":
+            deptName = "Electricity / Power";
+            break;
+        case "Gas Supply":
+            deptName = "Gas Supply";
+            break;
+        case "Sanitation / Drainage":
+            deptName = "Sanitation / Drainage";
+            break;
+        case "Street Lighting":
+            deptName = "Street Lighting";
+            break;
+        case "Police / Law & Order":
+            deptName = "Police / Law & Order";
+            break;
+        case "Fire & Safety":
+            deptName = "Fire & Safety";
+            break;
+        case "Ambulance Services":
+            deptName = "Ambulance Services";
+            break;
+        case "Road / Street Maintenance":
+            deptName = "Road / Street Maintenance";
+            break;
+        case "Road Safety / Signals":
+            deptName = "Road Safety / Signals";
+            break;
+        case "Natural Disaster Response":
+            deptName = "Natural Disaster Response";
+            break;
+        case "Schools / Colleges":
+            deptName = "Schools / Colleges";
+            break;
+        case "Welfare Schemes":
+            deptName = "Welfare Schemes";
+            break;
+        case "Public Transport":
+            deptName = "Public Transport";
+            break;
+        case "Public Toilets":
+            deptName = "Public Toilets";
+            break;
+        case "Garbage collection":
+            deptName = "Garbage collection";
+            break;
+        default:
+            deptName = "";
+    }
+
+    // Assign department by lookup
+    if (deptName) {
+        var dept = new GlideRecord("cmn_department");
+        dept.addQuery("name", deptName);
+        dept.query();
+        if (dept.next()) {
+            current.assigned_dept = dept.sys_id;  // ✅ assign sys_id, not name
+        }
+    }
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-24 12:09:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b7a48dbd83a722107f44871c7eda1ec5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Assigning Departments</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sys_script_b7a48dbd83a722107f44871c7eda1ec5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 07:40:12</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b7a48dbd83a722107f44871c7eda1ec5"/>
+</record_update>

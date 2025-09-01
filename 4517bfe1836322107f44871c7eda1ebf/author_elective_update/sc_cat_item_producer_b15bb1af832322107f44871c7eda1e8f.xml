@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <allow_edit>false</allow_edit>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category/>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Citizen Request</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture/>
+        <post_insert_script><![CDATA[/**
+* This script is executed after the record is generated. 
+* `current` Is the GlideRecord produced by Record Producer. Use `current.update()` to update the record
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]></post_insert_script>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=b15bb1af832322107f44871c7eda1e8f&amp;sysparm_preview=true", "summary");</preview>
+        <published_ref/>
+        <recurring_frequency/>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <save_options/>
+        <save_script><![CDATA[/**
+* This script is executed at every step save in Catalog Builder. 
+* This script is executed before `Script` is executed.
+* `current` Is the GlideRecord produced by Record Producer. 
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]></save_script>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <script><![CDATA[(function executeProducer(current, producer) {
+    // Map user inputs (make sure these names match your variables & table fields)
+    current.setValue('name',          producer.name);
+    current.setValue('e_mail',        producer.e_mail);      // use your exact variable name
+    current.setValue('phonenumber',   producer.phonenumber);
+    current.setValue('location',      producer.location);
+    current.setValue('service_type',  producer.service_type);
+    current.setValue('u_description', producer.description);
+
+    // Force feedback type to "complaint" on every record
+    current.setValue('feedback_type', 'request'); // value, not label
+})(current, producer);
+]]></script>
+        <short_description>Citizens can express there request about public service</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 02:27:21</sys_created_on>
+        <sys_id>b15bb1af832322107f44871c7eda1e8f</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>Citizen Request</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sc_cat_item_producer_b15bb1af832322107f44871c7eda1e8f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 08:45:43</sys_updated_on>
+        <table_name>x_snc_citizenfee_0_citizen</table_name>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <version>29</version>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="DELETE" query="documentkey=b15bb1af832322107f44871c7eda1e8f"/>
+    <fx_price action="DELETE" query="id=b15bb1af832322107f44871c7eda1e8f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</application>
+        <file_path/>
+        <instance_id>3aa94151979f66905382ff671153af18</instance_id>
+        <instance_name>mav-aug-7844-0031</instance_name>
+        <name>sc_cat_item_producer_b15bb1af832322107f44871c7eda1e8f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sc_cat_item_producer"&gt;&lt;sc_cat_item_producer action="INSERT_OR_UPDATE"&gt;&lt;access_type&gt;restricted&lt;/access_type&gt;&lt;active&gt;true&lt;/active&gt;&lt;allow_edit&gt;false&lt;/allow_edit&gt;&lt;availability&gt;on_desktop&lt;/availability&gt;&lt;billable&gt;false&lt;/billable&gt;&lt;can_cancel&gt;false&lt;/can_cancel&gt;&lt;category/&gt;&lt;checked_out/&gt;&lt;cost&gt;0&lt;/cost&gt;&lt;custom_cart/&gt;&lt;delivery_plan display_value="DEFAULT"&gt;523da512c611228900811a37c97c2014&lt;/delivery_plan&gt;&lt;delivery_plan_script/&gt;&lt;delivery_time&gt;1970-01-03 00:00:00&lt;/delivery_time&gt;&lt;description/&gt;&lt;display_price_property&gt;non_zero&lt;/display_price_property&gt;&lt;entitlement_script/&gt;&lt;flow_designer_flow/&gt;&lt;fulfillment_automation_level&gt;unspecified&lt;/fulfillment_automation_level&gt;&lt;group/&gt;&lt;hide_sp&gt;false&lt;/hide_sp&gt;&lt;icon/&gt;&lt;ignore_price&gt;true&lt;/ignore_price&gt;&lt;image/&gt;&lt;location/&gt;&lt;make_item_non_conversational&gt;false&lt;/make_item_non_conversational&gt;&lt;mandatory_attachment&gt;false&lt;/mandatory_attachment&gt;&lt;meta/&gt;&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;&lt;mobile_picture/&gt;&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;&lt;model/&gt;&lt;name&gt;Citizen Request&lt;/name&gt;&lt;no_attachment_v2&gt;false&lt;/no_attachment_v2&gt;&lt;no_cart&gt;false&lt;/no_cart&gt;&lt;no_cart_v2&gt;false&lt;/no_cart_v2&gt;&lt;no_delivery_time_v2&gt;false&lt;/no_delivery_time_v2&gt;&lt;no_order&gt;false&lt;/no_order&gt;&lt;no_order_now&gt;false&lt;/no_order_now&gt;&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;&lt;no_quantity&gt;false&lt;/no_quantity&gt;&lt;no_quantity_v2&gt;false&lt;/no_quantity_v2&gt;&lt;no_save_as_draft&gt;false&lt;/no_save_as_draft&gt;&lt;no_search&gt;false&lt;/no_search&gt;&lt;no_wishlist_v2&gt;false&lt;/no_wishlist_v2&gt;&lt;omit_price&gt;false&lt;/omit_price&gt;&lt;order&gt;0&lt;/order&gt;&lt;ordered_item_link/&gt;&lt;owner display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/owner&gt;&lt;picture/&gt;&lt;post_insert_script&gt;&lt;![CDATA[/**
+* This script is executed after the record is generated. 
+* `current` Is the GlideRecord produced by Record Producer. Use `current.update()` to update the record
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]&gt;&lt;/post_insert_script&gt;&lt;preview&gt;JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;amp;sysparm_id=b15bb1af832322107f44871c7eda1e8f&amp;amp;sysparm_preview=true", "summary");&lt;/preview&gt;&lt;published_ref/&gt;&lt;recurring_frequency/&gt;&lt;redirect_url&gt;generated_record&lt;/redirect_url&gt;&lt;request_method/&gt;&lt;roles/&gt;&lt;save_options/&gt;&lt;save_script&gt;&lt;![CDATA[/**
+* This script is executed at every step save in Catalog Builder. 
+* This script is executed before `Script` is executed.
+* `current` Is the GlideRecord produced by Record Producer. 
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]&gt;&lt;/save_script&gt;&lt;sc_catalogs/&gt;&lt;sc_ic_item_staging/&gt;&lt;sc_ic_version/&gt;&lt;sc_template/&gt;&lt;script&gt;&lt;![CDATA[(function executeProducer(current, producer) {
+    // Map user inputs (make sure these names match your variables &amp; table fields)
+    current.setValue('name',          producer.name);
+    current.setValue('e_mail',        producer.e_mail);      // use your exact variable name
+    current.setValue('phonenumber',   producer.phonenumber);
+    current.setValue('location',      producer.location);
+    current.setValue('service_type',  producer.service_type);
+    current.setValue('u_description', producer.description);
+
+    // Force feedback type to "complaint" on every record
+    current.setValue('feedback_type', 'request'); // value, not label
+})(current, producer);
+]]&gt;&lt;/script&gt;&lt;short_description&gt;Citizens can express there request about public service&lt;/short_description&gt;&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;&lt;start_closed&gt;false&lt;/start_closed&gt;&lt;state/&gt;&lt;sys_class_name&gt;sc_cat_item_producer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 02:27:21&lt;/sys_created_on&gt;&lt;sys_id&gt;b15bb1af832322107f44871c7eda1e8f&lt;/sys_id&gt;&lt;sys_mod_count&gt;28&lt;/sys_mod_count&gt;&lt;sys_name&gt;Citizen Request&lt;/sys_name&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_producer_b15bb1af832322107f44871c7eda1e8f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-31 08:45:43&lt;/sys_updated_on&gt;&lt;table_name&gt;x_snc_citizenfee_0_citizen&lt;/table_name&gt;&lt;taxonomy_topic/&gt;&lt;template/&gt;&lt;template_manager_roles/&gt;&lt;type&gt;item&lt;/type&gt;&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;&lt;vendor/&gt;&lt;version&gt;29&lt;/version&gt;&lt;view/&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;workflow/&gt;&lt;/sc_cat_item_producer&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=b15bb1af832322107f44871c7eda1e8f"/&gt;&lt;fx_price action="delete_multiple" query="id=b15bb1af832322107f44871c7eda1e8f"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1291520182</payload_hash>
+        <record_name>Citizen Request</record_name>
+        <reverted_from/>
+        <source>4117bfe1836322107f44871c7eda1ec2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 08:45:44</sys_created_on>
+        <sys_id>828bd0cc83b322107f44871c7eda1e13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198ff4dc7400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 08:45:44</sys_updated_on>
+        <type>Record Producer</type>
+        <update_guid>0a8bd0cc1ab322109fa21152e50e9f12</update_guid>
+        <update_guid_history>0a8bd0cc1ab322109fa21152e50e9f12:-1291520182,f240cea78363221031562d9a1814faca:-1867898748,435d7963bc6322108eca1591670b1f5c:545670803,8f1c3def0623221099216e482b68832b:536770930,f25b79af2e232210d675ec357adc52bd:1390848895,6a5b79af43232210910ac8afd4fb59b4:-752635266,225b79af3a232210b80bed270a15fead:1398847869,e65b79af8a232210019ea97b79be71a5:-744636292,e65b79af8e232210729065d2303e0791:1406846843,ae5b79aff0232210ce3bf2b81453e289:1494835557,665b79afd32322105759ad880f926e82:-648648604,2e5b79af9d232210f41f6a8599ddc77a:1502834531,e25b79afed23221052148bf8ea52bd73:-640649630,9a5b79af5f2322101ede1746b3f1626b:1510833505,525b79af79232210faff57ed73475c64:-632650656,1a5b79af53232210a100ff0013cbf85c:1518832479,de5b79afe923221048dfbf9fa4d68c54:-624651682,965b79afee232210fa795df342906b4d:1526831453,5e5b79af602322104654fc97107aed45:-616652708,165b79afd02322100b4ec682a815a03e:-172864210,da5b79af4e232210dda6f65d6a1ef336:1978618925,ce5b39af602322107749cd34541d5cfc:-164865236,ce5b39afeb23221074595ff9e11642f0:1986617899,4e5b39af1f232210b35948380893a5e4:-156866262,8a5b39afed2322101633545895d36acc:1994616873,3d5b39af3223221099787d30f87031b4:-148867288,3d5b39af642322100269aff95656b190:2002615847,715b39afae23221040cf503d653c9ca0:-140868314,315b39af9423221063f52e8d4358238a:1962358904</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Citizen Request">428bd0cc83b322107f44871c7eda1e16</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 08:45:44</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_producer">sc_cat_item_producer</sys_db_object>
+        <sys_id>7ef048c44cb74bf5a17182f008ca1c11</sys_id>
+        <sys_metadata>b15bb1af832322107f44871c7eda1e8f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Citizen Request</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_parent display_value="citizen">f418f765836322107f44871c7eda1e07</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_scope_delete display_value="">d5d15be73fd04fe0ab585c39f5d9a400</sys_scope_delete>
+        <sys_update_name>sc_cat_item_producer_b15bb1af832322107f44871c7eda1e8f</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_producer_b15bb1af832322107f44871c7eda1e8f">828bd0cc83b322107f44871c7eda1e13</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 08:45:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

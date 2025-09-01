@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">b119cb2283a322107f44871c7eda1ec8</canvas>
+        <component display_value="Vertical bar">23051643b7e03010097cb81cde11a910</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","yAxisHidden":false,"yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"top","showStackedValues":"none","showOverlappingLabels":false,"newReporting":false,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"sourceType":"table","tableOrViewName":"x_snc_citizenfee_0_citizen","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4X3NuY19jaXRpemVuZmVlXzBfY2l0aXplbjE3NTYyNzQ2MzM4NTIzNzA3OTU2LjI0MDQ3Njg3Mw==","dataCategories":["trend","group","simple"],"label":"citizen"}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Number of feed Back type","showBorder":true,"bareBorder":false,"telemetry":"null","showDataPassthrough":false,"metrics":[{"dataSource":"dGFibGV4X3NuY19jaXRpemVuZmVlXzBfY2l0aXplbjE3NTYyNzQ2MzM4NTIzNzA3OTU2LjI0MDQ3Njg3Mw==","id":"ZEdGaWJHVjRYM051WTE5amFYUnBlbVZ1Wm1WbFh6QmZZMmwwYVhwbGJqRTNOVFl5TnpRMk16TTROVEl6TnpBM09UVTJMakkwTURRM05qZzNNdz09MTc1NjI3NDYzMzg1MjQzMjY2ODc2LjEyMjEwMTMx","aggregateFunction":"COUNT","axisId":"primary","numberFormat":{"customFormat":true,"abbreviationEnabled":true,"numberInTooltipsEnabled":true},"dateFormat":{"customFormat":false},"stringFormat":{"customFormat":false}}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4X3NuY19jaXRpemVuZmVlXzBfY2l0aXplbjE3NTYyNzQ2MzM4NTIzNzA3OTU2LjI0MDQ3Njg3Mw==","groupByField":"assigned_dept","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":12,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":true,"disableRanges":false},{"groupBy":[{"dataSource":"dGFibGV4X3NuY19jaXRpemVuZmVlXzBfY2l0aXplbjE3NTYyNzQ2MzM4NTIzNzA3OTU2LjI0MDQ3Njg3Mw==","groupByField":"feedback_type","isRange":false,"isChoice":true,"isPaBucket":false}],"disableRanges":false}],"sortBy":"value","sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"showChangeFrom":"previous","period":"M","dateFormat":"default","showDataTable":false,"chartVariation":"grouped","colorConfig":{"type":"default"},"componentId":"fe9cpl2t","id":"metrics","value":[{"dataSource":"dGFibGV4X3NuY19jaXRpemVuZmVlXzBfY2l0aXplbjE3NTYyNzQ2MzM4NTIzNzA3OTU2LjI0MDQ3Njg3Mw==","id":"ZEdGaWJHVjRYM051WTE5amFYUnBlbVZ1Wm1WbFh6QmZZMmwwYVhwbGJqRTNOVFl5TnpRMk16TTROVEl6TnpBM09UVTJMakkwTURRM05qZzNNdz09MTc1NjI3NDYzMzg1MjQzMjY2ODc2LjEyMjEwMTMx","aggregateFunction":"COUNT","axisId":"primary","numberFormat":{"customFormat":true,"abbreviationEnabled":true,"numberInTooltipsEnabled":true},"dateFormat":{"customFormat":false},"stringFormat":{"customFormat":false}}],"noDebounce":true,"propLabel":"Metric label","filterPerMetric":[],"showDateRangeByDefault":false,"allowChangeDateRange":false,"scoreType":null,"allowAdditionalGroupByPerMetric":false}</component_props>
+        <h>16</h>
+        <name>Number of feed Back type</name>
+        <stored_component display_value="Number of feed Back type">36b3e3c79e266aa90cd9854d683e4ffb</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 06:17:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b8539b6e83a322107f44871c7eda1ed9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Number of feed Back type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>par_dashboard_widget_b8539b6e83a322107f44871c7eda1ed9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 06:17:51</sys_updated_on>
+        <visualization/>
+        <w>24</w>
+        <widget_props/>
+        <x>0</x>
+        <y>17</y>
+    </par_dashboard_widget>
+</record_update>

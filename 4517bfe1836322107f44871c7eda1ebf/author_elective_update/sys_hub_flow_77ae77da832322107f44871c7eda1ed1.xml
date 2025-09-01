@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=314454000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>After Complaint Register we need to notify the end user</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>after_complaint_register</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.e_mail","label":"Trigger - Record Created or Updated➛citizen Record➛E-mail","reference":"","reference_display":"E-mail","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"e_mail","usedInstances":{"cce0c117-c1cb-4fe2-b04a-05d6e417ae6f":["ah_to"],"6815a7e1-41e9-4fbd-87de-a205dc86a251":["ah_to"],"33891bea-7abb-49a9-8fe7-44865ea729de":["ah_to"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛citizen Record","reference":"x_snc_citizenfee_0_citizen","reference_display":"citizen","type":"reference","base_type":"reference","usedInstances":{"cce0c117-c1cb-4fe2-b04a-05d6e417ae6f":["record"],"33891bea-7abb-49a9-8fe7-44865ea729de":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛citizen Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"status","choices":[{"image":"","missing":false,"rawLabel":"Closed","selected":false,"label":"Closed","used":false,"reference":false,"value":"closed","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"In Progess","selected":false,"label":"In Progess","used":false,"reference":false,"value":"inprogess","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Open","selected":false,"label":"Open","used":false,"reference":false,"value":"open","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"8a76f115-1478-408d-84b0-11d2b0e6281d":["condition"],"91a7d2e9-aa0f-4913-8246-f8e0750cafeb":["condition"],"fdf84eae-279c-4d04-88ea-364573358254":["condition"]}},{"name":"Created or Updated_1.current.feedback_type","label":"Trigger - Record Created or Updated➛citizen Record➛FeedBack Type","reference":"","reference_display":"FeedBack Type","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"feedback_type","choices":[{"image":"","missing":false,"rawLabel":"Complaint","selected":false,"label":"Complaint","used":false,"reference":false,"value":"complaint","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Feedback","selected":false,"label":"Feedback","used":false,"reference":false,"value":"feedback","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Request","selected":false,"label":"Request","used":false,"reference":false,"value":"request","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Suggestion","selected":false,"label":"Suggestion","used":false,"reference":false,"value":"suggestion","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{}},{"name":"Updated_1.current.e_mail","label":"Trigger - Record Updated➛citizen Record➛E-mail","reference":"","reference_display":"E-mail","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"e_mail","usedInstances":{"6de04e38-8e9a-43c2-a062-0f68126a52e0":["ah_to"]}},{"name":"Updated_1.current.feedback_type","label":"Trigger - Record Updated➛citizen Record➛FeedBack Type","reference":"","reference_display":"FeedBack Type","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"feedback_type","choices":[{"image":"","missing":false,"rawLabel":"Complaint","selected":false,"label":"Complaint","used":false,"reference":false,"value":"complaint","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Feedback","selected":false,"label":"Feedback","used":false,"reference":false,"value":"feedback","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Request","selected":false,"label":"Request","used":false,"reference":false,"value":"request","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Suggestion","selected":false,"label":"Suggestion","used":false,"reference":false,"value":"suggestion","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"8a76f115-1478-408d-84b0-11d2b0e6281d":["condition"]}},{"name":"Updated_1.current.status","label":"Trigger - Record Updated➛citizen Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"status","choices":[{"image":"","missing":false,"rawLabel":"Closed","selected":false,"label":"Closed","used":false,"reference":false,"value":"closed","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"In Progess","selected":false,"label":"In Progess","used":false,"reference":false,"value":"inprogess","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Open","selected":false,"label":"Open","used":false,"reference":false,"value":"open","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"528813dc-f770-4de8-978d-64d74f08eeda":["condition"]}}]</label_cache>
+        <master_snapshot>b6d68866836322107f44871c7eda1e06</master_snapshot>
+        <master_snapshot_digest/>
+        <name>After Complaint Register</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>5ce5902a83a322107f44871c7eda1ea5</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 14:48:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77ae77da832322107f44871c7eda1ed1</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>After Complaint Register</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sys_hub_flow_77ae77da832322107f44871c7eda1ed1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:31:43</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=77ae77da832322107f44871c7eda1ed1"/>
+    <sys_variable_value action="DELETE" query="document_key=77ae77da832322107f44871c7eda1ed1"/>
+    <sys_flow_record_trigger action="DELETE">
+        <active>true</active>
+        <condition table="x_snc_citizenfee_0_citizen">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:30:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5ce5902a83a322107f44871c7eda1ea5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 16:30:09</sys_updated_on>
+        <table>x_snc_citizenfee_0_citizen</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="DELETE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>77ae77da832322107f44871c7eda1ed1</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:09:43</sys_created_on>
+        <sys_id>4b3ee263836722107f44871c7eda1e30</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:43</sys_updated_on>
+        <trigger display_value="">5ce5902a83a322107f44871c7eda1ea5</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN4b3ee263836722107f44871c7eda1e30"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=77ae77da832322107f44871c7eda1ed1"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=77ae77da832322107f44871c7eda1ed1^sys_idNOT INb7ae77da832322107f44871c7eda1ed3"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>77ae77da832322107f44871c7eda1ed1</id>
+        <name>After Complaint Register</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 14:48:48</sys_created_on>
+        <sys_id>b7ae77da832322107f44871c7eda1ed3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:48:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=b7ae77da832322107f44871c7eda1ed3"/>
+    <sys_hub_flow_input action="DELETE" query="model=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN43b68066836322107f44871c7eda1e5a,93b64466836322107f44871c7eda1e06,dfb64466836322107f44871c7eda1e02"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</model>
+        <model_id>77ae77da832322107f44871c7eda1ed1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:23:59</sys_created_on>
+        <sys_id>43b68066836322107f44871c7eda1e5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:23:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=43b68066836322107f44871c7eda1e5a"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</model>
+        <model_id>77ae77da832322107f44871c7eda1ed1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:00</sys_created_on>
+        <sys_id>93b64466836322107f44871c7eda1e06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:24:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=93b64466836322107f44871c7eda1e06"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</model>
+        <model_id>77ae77da832322107f44871c7eda1ed1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:23:59</sys_created_on>
+        <sys_id>dfb64466836322107f44871c7eda1e02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:23:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=dfb64466836322107f44871c7eda1e02"/>
+    <sys_hub_flow_output action="DELETE" query="model=77ae77da832322107f44871c7eda1ed1"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=77ae77da832322107f44871c7eda1ed1"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN3aad2623836722107f44871c7eda1e6a"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:07:15</sys_created_on>
+        <sys_id>3aad2623836722107f44871c7eda1e6a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:41</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9Va227jNhD9FUFPLeAWuthWnD6lTtINkN2gtnf7EKQCRVE2UZnyipQSd5F/71A3y7o4vihbbx4Si6Q4M4dnzpBmHr+pPnKIr16qM+T4RO2plAkSMuTP1isCzUI22wwtZd8SMReJIFyrlyKMSE/1wmA5I8uVjwQM9pDPoTEIXRKql3pPjZEfkema37kwE7yfTJPNqWbd8Pxic4ZtTAX9lzCPEFvLH2CQSzlMv/6Sjd104AX13RA+Xj4+9dQVCmFyIQ1/q3RRaR17OtFHFxo2DfjRNOOirztD09EN10QEaTBhFYmKt6IBkE2o5EUQ5hK3QKGGVUiQ+8D8dWnEC4dY1MsLTfZ6BDzGJEWqeLSz+NNmvAgoJg8rQQOWtqTepZ2BHy3Zp9RriRzxUOSLHDloiTjMR1bSUSYKP7zpInie5AZvKUtiyjr9ACO/eEJChNSJBOESZo/6ALidIsKDKEy8n9yMHybX9l9Xs/GHm4k9uZnOJnfj2c21+prEZX+N5Iyph5kvdhrOa7Hct5T4ctkynDkO6UpcYUHjnGevvQ13xwFzaYJJjb847+Lb/M1j30VgTWulMC5ZzGn8982fdb6mjYdx1dIs19XbuIqdElfLkTe4JhpAKEe3i7VZSztt+5r2PxE3E59jebsMXOJfb6ZToXM+ByZTtoqExCjHxQ5WJJR4wHvql6v78YerT3/cTH/L/t5OHj7mn2cP8N4zYoLbIrCR69ol1KUJiOWtBEgxeX2T72HE4AW7WL066xO4C9zvKYcwHyFjc0yTKaHfu8+mnERMCWCZ4ZeCoxAgFUqufN7dEs2zlfCmxCdYlCjjfeblp4+Uc8rmJa8LowkGNZuFOaCekoeU2uYnGn/qMuXroMcVMCupf3De67hvaKYz1CyZ9Tp89HTN0gbIc01Ncy5KeV93ptVLUaFEh/l/WPbzhIL+HoSrApu5rJVzYC/yxNvMy0OXxMhEZtyNa3pHrhnStYpYmgepZUHGtPl6m5O7Qut4d4DcGMEb7r7it6fueX7wDEJ9hOY5CP8zD4OIuVURknMqlCmbEcpPGX4/d6h/XhCS3Q5sjzgn5dvAnhMXsXUHmmeYOrGG/aEGUmdKlRuMRg5GhudZQ4voekXzNm40+nbGWvcGx+ImkrbpXiNd4iaWHaB4JzhYU7+DHTxd9zI6Nqpe2vdj6NvzgjAbXA1tXypYTebmPnVJ3tdtjtdMx5usPjXPsTNyBwPLwhacZyDPvT5xkN43BmhkDU3iVfK85souN0UDMu94yuFrnphv0YDPadd5HdXfk6ycCCFLz+EVmcFONXkHpUZKVVEuhpJISRAqnwL2y91mnDIlUOySA25XpXkfL+TCKu/rhhOIRW1vAKZ/h/Yt03JP2YLK2R2aKiSJt2M9VViQYaCRbrYIizVsEpaNM+1unulWYs+8iFszrGlPsS/N48Zsad0EHEHcCjnKu4Md25euQNE7B8V4P1DMk7dMeQa2nhSPcfYHKlzJHuKU6iVtEjvwypJ9HSjQoYARhXpK9s0iHPydtSIWBCD1YW8MBhVp/VStLteOuisFg7+vI+luu1bDoFnJtk3nV54qVOj2jEtcE4/cthLVt1r3vu11qtJ9psXq4FyIm1JrZ8U6bN7qnI01q0TUbR7sWY06jbq5JJ0WdWNReivq08vNrhN6gxfnX0ik07N0GY4oHwHDlbMG7vKyJWL0a0RsvEBsnl6k5IZuAWeC8EJJhyjpkC4LgP+M1lytViIgrcyL7GtnaIAMYal+dWWZxCRc12KVjUq0cmVx+M7Fx9hRfPJbRy5CeHO+3srYjDoHfZXqjCC5Bho2dd2sXRsPytfG28xt96elrhjH1pUFTe5bS+az1RF0SRIVKy5NlSUSeEF4T4ElTK4sEpGjIRfJ6F/VDs9UmNTBbyo7rakTt2Vdq4zvyIa4mkdNut3A7LiSBWXl3nl62hG+3kn4Rhfhm8eF3z+5cGWINFeuDL1uq9UR/ymjNperp/8AwJK+W+MlAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN72ad2623836722107f44871c7eda1e70,72ad2623836722107f44871c7eda1e71,fead2623836722107f44871c7eda1e6d"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>91a7d2e9-aa0f-4913-8246-f8e0750cafeb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:07:15</sys_created_on>
+        <sys_id>72ad2623836722107f44871c7eda1e70</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:12:31</sys_updated_on>
+        <ui_id>6815a7e1-41e9-4fbd-87de-a205dc86a251</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YbW/bNhD+K4TQj4aj2ImdZJ8SB1kDpO3QeC2GulApkbK5UKRGUk7dQP99R4myZDvzS+NhCZZv1vGOfO74PEeaXx48Rrwz74ic+L0wPsJ9v9vp+v5J5/Q07J7G/kn/1D+MiNfyBE4oeCoaSWW/p5hn1gA/CdMpx7NPtSWaME4UFd7Zl68tL8UKgg1V3tnD0tC2q3McUg6uQ6zG1KCPFYplVGaW2m8ioyyhwgSsMt64CS7dCLq+hBEIsqj8lke/GyoIBTgx5pq2vAQLgo1Us7lFUUw+CF4bJkwYmPJcaxkxbKhGZkIRTTDj6J6ZCcKoBNb27HzfNfsB4LodO1VMoQaRxcpExAgg8hrmwJUUhq/r4fgSG3xrVBaZTM0rLVlEdVlNQmOccTNo2kqHD6lhUpQhBoe8ipY8S8T7sojefILGTmYawNDU1sYmC4tD4vHtRN5/rMBeMVFU0VWFywjz+Vd8S7GKJleMcrvVIktC8G152BjFwsxYmEAKDl71OkEB1a4FnpTTYisTnKZMjINUySkrFgT4SXvM4aMdc3kP8ZqNRRtHNtc27B5uX4H9sjB/worZxN/BNBCctzw90wOOta7Th/oHf2UWfVmMRTg2OigIZ4MjxVJzDktNqUs2bzk1HZ6u4zM5qnnbmHOvitoCQa0oy4bHETk1rdhumrHofTngtHS4o5ZKRjkpDUE/ppR4qRxkHLy5fE78Rfn8g2yeh1zmIthaL4u6+He4DyTRQUlgl1ux+E9oYpMS/F4vDHvhcb9b8/A0ikk/jHu4H3Vr3t1D/1QJVndB0T8bcjhc1YPrDLtpYgsslSag5/KMUPS5ArUOpxNJKCU0MbGsEEB6cFVUd66QzpNOm5KayEgEm8lncMbMIVljfQKZCTaIaaRht9poKBFzWTUiWmgmM5Rk2oCbgZEF8S0cW0fPV3eODs56+ShXXoQw9y/A4/UHAa6JjSeBkQ3ZPTwMgIKGEiQV+j0l9mdw2I4ypSyhaGBJludoVZ07RO6m4C2SmZ9qcjUzJ1QN+yjGSzq9rYxOo931Gi0PrRWJNg4p//nK5aWowQLnLGEFIUod718gZC2nqL9Aoyja7zVti8UrQg8Gq0h2IfTRzx06r4x+cYw+XPtvmvYWeBTum9JbrF5R+mKJ0+HOpD5+JfX/hNTH62kVLRBJZ+GfNDINYv8hM4WuRSzh1ltcn681uqBQA/SbkrBbmpJV7m8XtOMVZnMelTxu51k8ltkuMum9Xmb+c5XsXxJ4LZXizmJvlWS230a/xfLzRl8uvoLGcXhiEr7E4LfDdzc1f/tPbPO94+Nu75XBT+7z6T3pECXT1OW2t15fdqDSZhOoKAI/1zl6BwfoV2pQbB+XNYqVTIr3D6jFeExtD3QPGSMxxQpZ/qFR5vtdgmISFNk61/mfU+vzS+keU0pCHN0NgZebwirfwJLYxWuqpkCKbcKdazMayglbQMklTc2m8MrXcsgsxRu5ZbCRLrJ8ot9YqMKrStVgk+mNWRZeLiRVTCpmZpuCKj8IGwnY74sMOlHjlcvypJzR/qpm+zYSbynnEr15sDuat2z0Z4omeEotJyiwidi3LwUezY3OYXSMFbHcefPQ2MK8PRLXxXsamItE8jaCGVlxPyie0e4nVCBmLIROXyOQWsqhgZK2Xby4TBgW3QFfXYWZPrP4io98JAZlxq6YZ/U6IwEkwMpYTVtzkxoweO4+0VA2R43M7bojMZxgcWcBQhEGzEBHFOi2TAwNKU5G4ltRXEWh4YmijPDt5Xn+9W/KP1NiHxwAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>fdf84eae-279c-4d04-88ea-364573358254</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:07:15</sys_created_on>
+        <sys_id>72ad2623836722107f44871c7eda1e71</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:12:31</sys_updated_on>
+        <ui_id>33891bea-7abb-49a9-8fe7-44865ea729de</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YbXPaOBD+KxpPP3LUQICQ+5SQyaUzaTtTuHZuSseVLRl0kSWfJJNQhv9+K1vGvOQINNxcMpdvaLUrPbt6npXR17nHiHfmnZBTvxPGJ7jrt5ot3z9t9nphqxf7p92e34iIV/METih4KhpJZcdTzDNrmM/7imJDCZIK/Z4S+zNo1KNMKSrMYgGuhOmU49lnFwGWaMI4gXnv7Ou3mpdiBYsbqryz+cbUvug4DikH1yFWY2rQpxLlJmozS+2YyChLAF7ASuONW+DSzaB3lzADQRaVX/PovaGCUIATY65pzUuwgFylmi0tUAbyUfDKMGHCwJLnWsuIQV00MhOKaIIZR3fMTBBGBbC6Z9e71+wHgGs17VIxhRpEFisTESOAyFsxB66kMP2umo4vscEDo7LIZGpZackiqotqEhrjjJv+qq1w+JgaJkURYnDIy2jJs0R8KIroLRdYOclMAxia2trYZGFzSDweTOTdpxLsFRN5FV1VuIwwX47iAcUqmlwxyu1RiywJwbfmYWMUCzNjYQIpOHhV+wQ5VLsXeFJO86NMcJoyMQ5SJacs3xDgJ/Uxh0E95vIO4jUbizqObK51OD1cvwL7ZW7+jBWzib+HZSB4UfP0TPc51rpKH+of/JVZ9EUx1uHY6CAnnA2OFEvNOWw1pS7ZRc2prdHbxWdyUvF2Zc1KcfeBFlEQMQN0ETGlgV8OtrVWTRwmuT0gVpKzdHkYspPblu1mNRZ9KCac2BoHiq2gnNPaEARmih5QSAsZB2+pr1N/XV//oKvnoaelSvYW1Lpw/h1xAEl0UDDc5ZZv/hOieUwqfqcThp2w3W1VPOxFMemGcQd3o1bFuztosCrB6jbIG+yKXhrbsnCt4zBN7IGl1AQ0ZZ4Rir6UoHbhdCIJpYQuJzYVAkjfXuXVXSqk+aTrqKAmMhLBYfIZXEJLSNZYXVFmgg1iGmk4rToaSsRcVisRNTSTGUoybcDNwMya+NbutZPnqztHB2e9fJArL0KYxxdge/dFgCti40lg5N4fhnUaWJItFmhbnQdEHqbgPZJZ3mpyOzMnVA3nKMYbOh2URqfR1m6NFpfWlkRXLin/+crlpajBAucsYTkhCh0fXyBkJ6eov0ajKFoRyBH+Ge2xeUnofn8bySGEPvm5S+eV0S+O0Y2df7dpZ41H4bEpvcfuJaUvNjgdHkzq9iup/yekbu+mVbRGJJ2Ff9LIrBD7D5kp1Meaomus0QWlAvVlknIgMtkm/SPeB360PI68FMRgifuhXA4RRuf18+U/18XxRYB3UilurndTSWbHbe17bL9s7cXmW2gchycm4RsMvh6+v6n4231iY++0263OK4Of3NnTO9IkSqapy+1o3b3oQIXNJlBSBH7ucvTevkW/UYNi+96sUaxkkr94QC3GY2p7oHu6GIkpVsjyD40y328RFJMgz9a5Lv+OWp9fC/eYUhLi6HYIvHwsrPQNLIldvKZqCqTYJ9y5ltEjAYldZCA5pJm9aezrjbj9JX+doVrjMS22sEUq1/4+EteUc4nezG0Si5pd5wtFEzyltgwUCkjsA48Cj9XcFjA7xorYcr2Zr6Be1NG5IKjPpYbIQRYB3XWccT6rj8TQIrLL1e0+/eJlGg2KaDSkOBmJ73kuioKQRI4Vxt5isfj2NySQ+oyqGgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>8a76f115-1478-408d-84b0-11d2b0e6281d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:07:15</sys_created_on>
+        <sys_id>fead2623836722107f44871c7eda1e6d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:12:31</sys_updated_on>
+        <ui_id>cce0c117-c1cb-4fe2-b04a-05d6e417ae6f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1ZW2/bNhT+K4TQR8NV4sS57KlxkDVAL0DttRjqQqVIyuZCkRpJxfUC//cdStTFduZL42EtljeTPIf8zjnfR1L054eA0+AyOKHnYT9OTvBZ2DvuheH58cVF3LtIwvOzi/CI0KATSJwysNSMKO3a91jkruPhYaAZtowipdFvGXU/o6MuybVm0i4WYEq5yQSef/Qe0EOmXFAYDy4/f+kEGdYwuWU6uHxYGdoVncAxE2A6wnrCLPpQoVxFbeeZa1NF8hTgRbzqfOMnuPYj6PYaRsDJoQo7AftmmaQM4CRYGNYJUiwhVqXndQ+kgb6XoumYcmlhylfGKMIhLwbZKUMsxVygGbdThFEJrBu4+b4Z/heA6x27qRIGOSAOK5eEU0AUtLojn1IYvm2Gk2ts8dDqnNhc15lWnDBTZpOyBOfCDtp9pcH7zHIlSxeLY1F5K5Gn8l2ZxKCeoFXJ3AAYlrncuGBhcQg8GU7V7EMF9obLIos+K0IRLOpWMmRYk+kNZ8KVWuZpDLadAFureZxbBxNIIcCqWScqoLq1wJIJVpQyxVnG5STKtLrnxYIAP+1OBDS6iVAz8Dd8IruYuFi7UD3cvYH+66L7I9bcBf4WpgHnRScwczMQ2JgmfMh/9Gfu0JfJWIbjvKOCcM6ZaJ7ZV7DUPfPBLjpebUcXm/hMTxretuZsFPctMpJEhFugi0wYi8Kqsa61ZmA/ye0AsZGco8vjkL3c1vretH3Ru3LAi+1oT7GVlPNaG4HAbLkHlNJC1sOr9XUeLuvrH3T1Y+ipVsnOgloWzr8jDiCJiUqG+9iKxb9DNNukEvb7cdyPT896DQ8vSELP4qSPz0iv4d0MNlidYn0XFRtsSy9H67LwW8d+mtgBS6UJ2JRFThn6VIHahNOLJFYKdjm5qhBA+vKmyG6tkOMnHUclNZFVCIop5nAI1ZBcZ3NE2Sm2iBtkoFpdNFKI+6haHh00VzlKc2PBzMLIkviWzrWTH1d3ng6+9/pRrvwUwjy8AE83HwS4ITaeRlbtfDHsssiRbLFA6+rcw3M/Be8QTH2qqfXIvFAN1FFOVnQ6rDq9RnubNVoeWmsSbR1S4Y8rl59FDQ644CkvCFHq+PACoRs5xcIlGhHSEsgBvox2WLwi9GCwjmQfQp9836HzzOifjtFHGz+3WX+JR/GhKb3D6hWlr1Y4He9N6tNnUv9PSH26mVZkiUgmj/9gxLaI/bvKNbqViYJbb3F9fo0NumJMomFOoFomyQXcpT8wwmBxuq6D/SfY82qzPb5KNsM6usci3kc+/edLzn+unoNJpep0UFuMgNZjulrUysIbmZccL2/Ris4Pe17ssHx9XpSLr6HxlJ/aVKwQ/vXo7ZuG7mdPPC36p6e9/jPhn3xcZDN6TLXKMh/bwY6McsNakkFBkTUNLBsGL1+iX5lFiXvENijRKi2eUSAXkwlzW6Z/DxnLe6yR4x8a52HYoyihURGtN62/cZ3NL6V5whiNMbkbAS+3uVW2kSOx9zdM3wMpdnH3pm1vSCeUgNFrltlt7pWt45Bd8bdqV2+rvGv5X8DWTBVWVawW29xsDbOw8i6Z5kpzO9/mVNmB21hCwa9y2Ipar2WOKOWM7lc129exfM2EUOjFgyvpouO8PzE0xffMkaI47N0bmgaLdqUXMDrBmjryvHho1XDRHctbCxMYFLvrA9woZmAHs/jHO80yzdybHUyNoGxY2+IPLTBESa7BBKpSCs2BKS4mlpM7ILDPODeXDm/RWIzloMyAT64bKn/B0CtfMzRSrr8p4cLHOeNCIKksT+bFS6GCHcSh1My9LGKJ8uJ5p0AymmJ556wgSYPyfws0LANHI4bTsfxaJF8z2BFlkWZoB3AUffkbJ5QH6sgcAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=77ae77da832322107f44871c7eda1ed1"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN1bb64466836322107f44871c7eda1e2d,f2ad2623836722107f44871c7eda1e6f,faad2623836722107f44871c7eda1e70"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">5fb64466836322107f44871c7eda1e2c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:00</sys_created_on>
+        <sys_id>1bb64466836322107f44871c7eda1e2d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:41</sys_updated_on>
+        <ui_id>8a76f115-1478-408d-84b0-11d2b0e6281d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8HPxvijDmveSkdhsK2wdn3ZirmW5ERMljR9JM2M//uu/JGENmWj7HFv0pHuveccHdRFyjvtnb1XV9bytYxW3x7jiMuA4bqLJLQsWkVEScodV7IagDjagvDhAJeUWy1g/3BEyIYLatjUTYPBGsdMtOqeHbm9ZpWAmgksvHOGyzWWc4q7JoUmuyQZKfJlkadp/u4iq5dFneW0AAYF3psLr2dyi48DEr/KOsxD3M6TlKGBVpbGEXtyTFKGoxsQlsVRC5KCU2Z/QAwDeivFEdhw6UbFLTxZ/gt752UZLjYMNZLJjsO2mqyaXVKcsFsdCI6Ig1rMFirhW/l51BFMZg144U5M9hb7MR1IBxYTpeZuo3Zf5oE3XA4Cp0OhCIjDDhzaUHvHbHgYJliLjaoWtEZzKm3Ulg/FyKVN1gI3SSPUDoeGpCRAAvEEPYLkBvH3A/wAhgcVn7ANFo80a7CcVEOqsJ0zKKEfbKl++kBoFDhJqUY38IIlhmt3hXO2bGLdxy8jeZLGrrvGR3KMLpRZfNU0LKssId6gHS6xDpy3ff/dp2lBFQ58Gd+3tPgXeb+EsimztDyf94vlubyfSfrrIc//EPLwLH+Z8TRN/4f8NOTcVmNYJ23D8Ddn/DEEepxgx9xQRrhFIvcB+zD/zuFgjwHg5BTaKfMjSDhi/W82d4Kv5wUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">faad2623836722107f44871c7eda1e6e</block>
+        <comment/>
+        <connected_to>8a76f115-1478-408d-84b0-11d2b0e6281d</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:07:15</sys_created_on>
+        <sys_id>f2ad2623836722107f44871c7eda1e6f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:41</sys_updated_on>
+        <ui_id>91a7d2e9-aa0f-4913-8246-f8e0750cafeb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnQdCjCVrfghQBCrQN0KS5tIGwIlc2UYpk+bDjCv73LvWwjTzQIoeeeiOH3N2Z4YB9ooM3wbtbfeGcWKlk+e0+TYSKGK37REGHyTJhWnHhhVb1AKTJBmSIB7TkwhkJu7sjwtZCcotTNwOWajzaZNk/OvI7g7WEBiUV3ngr1IrKBaddm0NbvGMFq8rzqszz8u2bojmvmqLkFSCUdG8uvJzJLT4OSPoi6ziPcDdP0pZHWkWeJvjgUXGk0S1Ih2nSgeLgtd0dEIvAr5U8Amuh/Ki4gwcnflHv8uwsXmyRNLLJjsO2nqyaXdKC4bWJBEfEQyNnC7UMnfo86ogmYwtB+hOTg6N+aCLpyGKi1N6s9fbLPPBKqEHgdCg1A3nYgScbmuDRxYdBiR01qjswhsypjdUbMRQTly5bSdpkrdRbGhqTkgGLxDPyCLIrwt8P8B1YEVV8ojZUPNJswAlWD6midt6ShP1gS/0zREKjwElKPbpBFxyzwvgLmrPBifU+fRrJkzT2/SU9kke+0Hbx1fC4rIuMBUt2+Mx58MHt999Dnlec+Fi9QueeZvjVff5B8ovnkv9M5l+Oe/mHuMcH+su053n+P+6ncReuHmM7aRuGvzrt9zHa4wQ35oYjE46I3Ebsw/xPx4MdBUCwU2ir7Y8o4YjtfwPJyYtE8QUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">3aad2623836722107f44871c7eda1e70</block>
+        <comment/>
+        <connected_to>8a76f115-1478-408d-84b0-11d2b0e6281d</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:07:15</sys_created_on>
+        <sys_id>faad2623836722107f44871c7eda1e70</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:42</sys_updated_on>
+        <ui_id>fdf84eae-279c-4d04-88ea-364573358254</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnQdCjCVrfghQBCrQN0KS5tIGwIlc2UYpk+bDjCv73LvWwjTzQIoeeeiOH3N2Z4YB9ooM3wbtbfeGcWKlk+e0+TYSKGK37REGHyTJhWnHhhVb1AKTJBmSIB7TkwhkJu7sjwtZCcotTNwOWajzaZNk/OvI7g7WEBiUV3ngr1IrKBaddm0NbvGMFq8rzqszz8u2bojmvmqLkFSCUdG8uvJzJLT4OSPoi6ziPcDdP0pZHWkWeJvjgUXGk0S1Ih2nSgeLgtd0dEIvAr5U8Amuh/Ki4gwcnflHv8uwsXmyRNLLJjsO2nqyaXdKC4bWJBEfEQyNnC7UMnfo86ogmYwtB+hOTg6N+aCLpyGKi1N6s9fbLPPBKqEHgdCg1A3nYgScbmuDRxYdBiR01qjswhsypjdUbMRQTly5bSdpkrdRbGhqTkgGLxDPyCLIrwt8P8B1YEVV8ojZUPNJswAlWD6midt6ShP1gS/0zREKjwElKPbpBFxyzwvgLmrPBifU+fRrJkzT2/SU9kke+0Hbx1fC4rIuMBUt2+Mx58MHt999DnlecSe3ovZ8E+HVN/kHmi+cy/0zaXw56+Yegx6f5y5znef4/6KdBF64eAztpG4a/Ouf3MdTjBDfmhiMTjojcRuzD/EPHgx0FQLBTaKvtjyjhiO1/A3WrVO7rBQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=77ae77da832322107f44871c7eda1ed1"/>
+    <sys_hub_flow_variable action="DELETE" query="model=77ae77da832322107f44871c7eda1ed1"/>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:00</sys_created_on>
+        <sys_id>57b64466836322107f44871c7eda1e05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:24:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:00</sys_created_on>
+        <sys_id>d3b64466836322107f44871c7eda1e08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:24:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:23:59</sys_created_on>
+        <sys_id>d3b68066836322107f44871c7eda1e62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:23:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_77ae77da832322107f44871c7eda1ed1"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>After Complaint Register we need to notify the end user</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>after_complaint_register</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.e_mail","label":"Trigger - Record Created or Updated➛citizen Record➛E-mail","reference":"","reference_display":"E-mail","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"e_mail","usedInstances":{"cce0c117-c1cb-4fe2-b04a-05d6e417ae6f":["ah_to"],"6815a7e1-41e9-4fbd-87de-a205dc86a251":["ah_to"],"33891bea-7abb-49a9-8fe7-44865ea729de":["ah_to"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛citizen Record","reference":"x_snc_citizenfee_0_citizen","reference_display":"citizen","type":"reference","base_type":"reference","usedInstances":{"cce0c117-c1cb-4fe2-b04a-05d6e417ae6f":["record"],"33891bea-7abb-49a9-8fe7-44865ea729de":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛citizen Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"status","choices":[{"image":"","missing":false,"rawLabel":"Closed","selected":false,"label":"Closed","used":false,"reference":false,"value":"closed","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"In Progess","selected":false,"label":"In Progess","used":false,"reference":false,"value":"inprogess","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Open","selected":false,"label":"Open","used":false,"reference":false,"value":"open","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"8a76f115-1478-408d-84b0-11d2b0e6281d":["condition"],"91a7d2e9-aa0f-4913-8246-f8e0750cafeb":["condition"],"fdf84eae-279c-4d04-88ea-364573358254":["condition"]}},{"name":"Created or Updated_1.current.feedback_type","label":"Trigger - Record Created or Updated➛citizen Record➛FeedBack Type","reference":"","reference_display":"FeedBack Type","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"feedback_type","choices":[{"image":"","missing":false,"rawLabel":"Complaint","selected":false,"label":"Complaint","used":false,"reference":false,"value":"complaint","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Feedback","selected":false,"label":"Feedback","used":false,"reference":false,"value":"feedback","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Request","selected":false,"label":"Request","used":false,"reference":false,"value":"request","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Suggestion","selected":false,"label":"Suggestion","used":false,"reference":false,"value":"suggestion","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{}},{"name":"Updated_1.current.e_mail","label":"Trigger - Record Updated➛citizen Record➛E-mail","reference":"","reference_display":"E-mail","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"e_mail","usedInstances":{"6de04e38-8e9a-43c2-a062-0f68126a52e0":["ah_to"]}},{"name":"Updated_1.current.feedback_type","label":"Trigger - Record Updated➛citizen Record➛FeedBack Type","reference":"","reference_display":"FeedBack Type","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"feedback_type","choices":[{"image":"","missing":false,"rawLabel":"Complaint","selected":false,"label":"Complaint","used":false,"reference":false,"value":"complaint","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Feedback","selected":false,"label":"Feedback","used":false,"reference":false,"value":"feedback","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Request","selected":false,"label":"Request","used":false,"reference":false,"value":"request","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Suggestion","selected":false,"label":"Suggestion","used":false,"reference":false,"value":"suggestion","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"8a76f115-1478-408d-84b0-11d2b0e6281d":["condition"]}},{"name":"Updated_1.current.status","label":"Trigger - Record Updated➛citizen Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"status","choices":[{"image":"","missing":false,"rawLabel":"Closed","selected":false,"label":"Closed","used":false,"reference":false,"value":"closed","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"In Progess","selected":false,"label":"In Progess","used":false,"reference":false,"value":"inprogess","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Open","selected":false,"label":"Open","used":false,"reference":false,"value":"open","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"528813dc-f770-4de8-978d-64d74f08eeda":["condition"]}}]</label_cache>
+        <master>true</master>
+        <name>After Complaint Register</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="After Complaint Register">77ae77da832322107f44871c7eda1ed1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b6d68866836322107f44871c7eda1e06</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:43</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=b6d68866836322107f44871c7eda1e06"/>
+    <sys_variable_value action="DELETE" query="document_key=b6d68866836322107f44871c7eda1e06"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=b6d68866836322107f44871c7eda1e06"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=b6d68866836322107f44871c7eda1e06^sys_idNOT INf2d68866836322107f44871c7eda1e07"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>b6d68866836322107f44871c7eda1e06</id>
+        <name>After Complaint Register</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:31</sys_created_on>
+        <sys_id>f2d68866836322107f44871c7eda1e07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:24:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=f2d68866836322107f44871c7eda1e07"/>
+    <sys_hub_flow_input action="DELETE" query="model=b6d68866836322107f44871c7eda1e06^sys_idNOT IN4fd68866836322107f44871c7eda1e2b,8bd68866836322107f44871c7eda1e32,f2d68866836322107f44871c7eda1e08"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</model>
+        <model_id>b6d68866836322107f44871c7eda1e06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:31</sys_created_on>
+        <sys_id>4fd68866836322107f44871c7eda1e2b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=4fd68866836322107f44871c7eda1e2b"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</model>
+        <model_id>b6d68866836322107f44871c7eda1e06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:31</sys_created_on>
+        <sys_id>8bd68866836322107f44871c7eda1e32</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=8bd68866836322107f44871c7eda1e32"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</model>
+        <model_id>b6d68866836322107f44871c7eda1e06</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:31</sys_created_on>
+        <sys_id>f2d68866836322107f44871c7eda1e08</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=f2d68866836322107f44871c7eda1e08"/>
+    <sys_hub_flow_output action="DELETE" query="model=b6d68866836322107f44871c7eda1e06"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=b6d68866836322107f44871c7eda1e06"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=b6d68866836322107f44871c7eda1e06^sys_idNOT IN8fd68866836322107f44871c7eda1e4c"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:32</sys_created_on>
+        <sys_id>8fd68866836322107f44871c7eda1e4c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:42</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=b6d68866836322107f44871c7eda1e06^sys_idNOT INf63ea263836722107f44871c7eda1ee0,fe3ea263836722107f44871c7eda1edf,fe3ea263836722107f44871c7eda1ee0"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>91a7d2e9-aa0f-4913-8246-f8e0750cafeb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:09:42</sys_created_on>
+        <sys_id>f63ea263836722107f44871c7eda1ee0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:42</sys_updated_on>
+        <ui_id>6815a7e1-41e9-4fbd-87de-a205dc86a251</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YbW/bNhD+K4TQj4aj2ImdZJ8SB1kDpO3QeC2GulApkbK5UKRGUk7dQP99R4myZDvzS+NhCZZv1vGOfO74PEeaXx48Rrwz74ic+L0wPsJ9v9vp+v5J5/Q07J7G/kn/1D+MiNfyBE4oeCoaSWW/p5hn1gA/CdMpx7NPtSWaME4UFd7Zl68tL8UKgg1V3tnD0tC2q3McUg6uQ6zG1KCPFYplVGaW2m8ioyyhwgSsMt64CS7dCLq+hBEIsqj8lke/GyoIBTgx5pq2vAQLgo1Us7lFUUw+CF4bJkwYmPJcaxkxbKhGZkIRTTDj6J6ZCcKoBNb27HzfNfsB4LodO1VMoQaRxcpExAgg8hrmwJUUhq/r4fgSG3xrVBaZTM0rLVlEdVlNQmOccTNo2kqHD6lhUpQhBoe8ipY8S8T7sojefILGTmYawNDU1sYmC4tD4vHtRN5/rMBeMVFU0VWFywjz+Vd8S7GKJleMcrvVIktC8G152BjFwsxYmEAKDl71OkEB1a4FnpTTYisTnKZMjINUySkrFgT4SXvM4aMdc3kP8ZqNRRtHNtc27B5uX4H9sjB/worZxN/BNBCctzw90wOOta7Th/oHf2UWfVmMRTg2OigIZ4MjxVJzDktNqUs2bzk1HZ6u4zM5qnnbmHOvitoCQa0oy4bHETk1rdhumrHofTngtHS4o5ZKRjkpDUE/ppR4qRxkHLy5fE78Rfn8g2yeh1zmIthaL4u6+He4DyTRQUlgl1ux+E9oYpMS/F4vDHvhcb9b8/A0ikk/jHu4H3Vr3t1D/1QJVndB0T8bcjhc1YPrDLtpYgsslSag5/KMUPS5ArUOpxNJKCU0MbGsEEB6cFVUd66QzpNOm5KayEgEm8lncMbMIVljfQKZCTaIaaRht9poKBFzWTUiWmgmM5Rk2oCbgZEF8S0cW0fPV3eODs56+ShXXoQw9y/A4/UHAa6JjSeBkQ3ZPTwMgIKGEiQV+j0l9mdw2I4ypSyhaGBJludoVZ07RO6m4C2SmZ9qcjUzJ1QN+yjGSzq9rYxOo931Gi0PrRWJNg4p//nK5aWowQLnLGEFIUod718gZC2nqL9Aoyja7zVti8UrQg8Gq0h2IfTRzx06r4x+cYw+XPtvmvYWeBTum9JbrF5R+mKJ0+HOpD5+JfX/hNTH62kVLRBJZ+GfNDINYv8hM4WuRSzh1ltcn681uqBQA/SbkrBbmpJV7m8XtOMVZnMelTxu51k8ltkuMum9Xmb+c5XsXxJ4LZXizmJvlWS230a/xfLzRl8uvoLGcXhiEr7E4LfDdzc1f/tPbPO94+Nu75XBT+7z6T3pECXT1OW2t15fdqDSZhOoKAI/1zl6BwfoV2pQbB+XNYqVTIr3D6jFeExtD3QPGSMxxQpZ/qFR5vtdgmISFNk61/mfU+vzS+keU0pCHN0NgZebwirfwJLYxWuqpkCKbcKdazMayglbQMklTc2m8MrXcsgsxRu5ZbCRLrJ8ot9YqMKrStVgk+mNWRZeLiRVTCpmZpuCKj8IGwnY74sMOlHjlcvypJzR/qpm+zYSbynnEr15sDuat2z0Z4omeEotJyiwidi3LwUezY3OYXSMFbHcefPQ2MK8PRLXxXsamItE8jaCGVlxPyie0e4nVCBmLIROXyOQWsqhgZK2Xby4TBgW3QFfXYWZPrP4io98JAZlxq6YZ/U6IwEkwMpYTVtzkxoweO4+0VA2R43M7bojMZxgcWcBQhEGzEBHFOi2TAwNKU5G4ltRXEWh4YmijPDt5Xn+9W/KP1NiHxwAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>8a76f115-1478-408d-84b0-11d2b0e6281d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:09:42</sys_created_on>
+        <sys_id>fe3ea263836722107f44871c7eda1edf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:42</sys_updated_on>
+        <ui_id>cce0c117-c1cb-4fe2-b04a-05d6e417ae6f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1ZW2/bNhT+K4TQR8NV4sS57KlxkDVAL0DttRjqQqVIyuZCkRpJxfUC//cdStTFduZL42EtljeTPIf8zjnfR1L054eA0+AyOKHnYT9OTvBZ2DvuheH58cVF3LtIwvOzi/CI0KATSJwysNSMKO3a91jkruPhYaAZtowipdFvGXU/o6MuybVm0i4WYEq5yQSef/Qe0EOmXFAYDy4/f+kEGdYwuWU6uHxYGdoVncAxE2A6wnrCLPpQoVxFbeeZa1NF8hTgRbzqfOMnuPYj6PYaRsDJoQo7AftmmaQM4CRYGNYJUiwhVqXndQ+kgb6XoumYcmlhylfGKMIhLwbZKUMsxVygGbdThFEJrBu4+b4Z/heA6x27qRIGOSAOK5eEU0AUtLojn1IYvm2Gk2ts8dDqnNhc15lWnDBTZpOyBOfCDtp9pcH7zHIlSxeLY1F5K5Gn8l2ZxKCeoFXJ3AAYlrncuGBhcQg8GU7V7EMF9obLIos+K0IRLOpWMmRYk+kNZ8KVWuZpDLadAFureZxbBxNIIcCqWScqoLq1wJIJVpQyxVnG5STKtLrnxYIAP+1OBDS6iVAz8Dd8IruYuFi7UD3cvYH+66L7I9bcBf4WpgHnRScwczMQ2JgmfMh/9Gfu0JfJWIbjvKOCcM6ZaJ7ZV7DUPfPBLjpebUcXm/hMTxretuZsFPctMpJEhFugi0wYi8Kqsa61ZmA/ye0AsZGco8vjkL3c1vretH3Ru3LAi+1oT7GVlPNaG4HAbLkHlNJC1sOr9XUeLuvrH3T1Y+ipVsnOgloWzr8jDiCJiUqG+9iKxb9DNNukEvb7cdyPT896DQ8vSELP4qSPz0iv4d0MNlidYn0XFRtsSy9H67LwW8d+mtgBS6UJ2JRFThn6VIHahNOLJFYKdjm5qhBA+vKmyG6tkOMnHUclNZFVCIop5nAI1ZBcZ3NE2Sm2iBtkoFpdNFKI+6haHh00VzlKc2PBzMLIkviWzrWTH1d3ng6+9/pRrvwUwjy8AE83HwS4ITaeRlbtfDHsssiRbLFA6+rcw3M/Be8QTH2qqfXIvFAN1FFOVnQ6rDq9RnubNVoeWmsSbR1S4Y8rl59FDQ644CkvCFHq+PACoRs5xcIlGhHSEsgBvox2WLwi9GCwjmQfQp9836HzzOifjtFHGz+3WX+JR/GhKb3D6hWlr1Y4He9N6tNnUv9PSH26mVZkiUgmj/9gxLaI/bvKNbqViYJbb3F9fo0NumJMomFOoFomyQXcpT8wwmBxuq6D/SfY82qzPb5KNsM6usci3kc+/edLzn+unoNJpep0UFuMgNZjulrUysIbmZccL2/Ris4Pe17ssHx9XpSLr6HxlJ/aVKwQ/vXo7ZuG7mdPPC36p6e9/jPhn3xcZDN6TLXKMh/bwY6McsNakkFBkTUNLBsGL1+iX5lFiXvENijRKi2eUSAXkwlzW6Z/DxnLe6yR4x8a52HYoyihURGtN62/cZ3NL6V5whiNMbkbAS+3uVW2kSOx9zdM3wMpdnH3pm1vSCeUgNFrltlt7pWt45Bd8bdqV2+rvGv5X8DWTBVWVawW29xsDbOw8i6Z5kpzO9/mVNmB21hCwa9y2Ipar2WOKOWM7lc129exfM2EUOjFgyvpouO8PzE0xffMkaI47N0bmgaLdqUXMDrBmjryvHho1XDRHctbCxMYFLvrA9woZmAHs/jHO80yzdybHUyNoGxY2+IPLTBESa7BBKpSCs2BKS4mlpM7ILDPODeXDm/RWIzloMyAT64bKn/B0CtfMzRSrr8p4cLHOeNCIKksT+bFS6GCHcSh1My9LGKJ8uJ5p0AymmJ556wgSYPyfws0LANHI4bTsfxaJF8z2BFlkWZoB3AUffkbJ5QH6sgcAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>fdf84eae-279c-4d04-88ea-364573358254</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:09:42</sys_created_on>
+        <sys_id>fe3ea263836722107f44871c7eda1ee0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:42</sys_updated_on>
+        <ui_id>33891bea-7abb-49a9-8fe7-44865ea729de</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YbXPaOBD+KxpPP3LUQICQ+5SQyaUzaTtTuHZuSseVLRl0kSWfJJNQhv9+K1vGvOQINNxcMpdvaLUrPbt6npXR17nHiHfmnZBTvxPGJ7jrt5ot3z9t9nphqxf7p92e34iIV/METih4KhpJZcdTzDNrmM/7imJDCZIK/Z4S+zNo1KNMKSrMYgGuhOmU49lnFwGWaMI4gXnv7Ou3mpdiBYsbqryz+cbUvug4DikH1yFWY2rQpxLlJmozS+2YyChLAF7ASuONW+DSzaB3lzADQRaVX/PovaGCUIATY65pzUuwgFylmi0tUAbyUfDKMGHCwJLnWsuIQV00MhOKaIIZR3fMTBBGBbC6Z9e71+wHgGs17VIxhRpEFisTESOAyFsxB66kMP2umo4vscEDo7LIZGpZackiqotqEhrjjJv+qq1w+JgaJkURYnDIy2jJs0R8KIroLRdYOclMAxia2trYZGFzSDweTOTdpxLsFRN5FV1VuIwwX47iAcUqmlwxyu1RiywJwbfmYWMUCzNjYQIpOHhV+wQ5VLsXeFJO86NMcJoyMQ5SJacs3xDgJ/Uxh0E95vIO4jUbizqObK51OD1cvwL7ZW7+jBWzib+HZSB4UfP0TPc51rpKH+of/JVZ9EUx1uHY6CAnnA2OFEvNOWw1pS7ZRc2prdHbxWdyUvF2Zc1KcfeBFlEQMQN0ETGlgV8OtrVWTRwmuT0gVpKzdHkYspPblu1mNRZ9KCac2BoHiq2gnNPaEARmih5QSAsZB2+pr1N/XV//oKvnoaelSvYW1Lpw/h1xAEl0UDDc5ZZv/hOieUwqfqcThp2w3W1VPOxFMemGcQd3o1bFuztosCrB6jbIG+yKXhrbsnCt4zBN7IGl1AQ0ZZ4Rir6UoHbhdCIJpYQuJzYVAkjfXuXVXSqk+aTrqKAmMhLBYfIZXEJLSNZYXVFmgg1iGmk4rToaSsRcVisRNTSTGUoybcDNwMya+NbutZPnqztHB2e9fJArL0KYxxdge/dFgCti40lg5N4fhnUaWJItFmhbnQdEHqbgPZJZ3mpyOzMnVA3nKMYbOh2URqfR1m6NFpfWlkRXLin/+crlpajBAucsYTkhCh0fXyBkJ6eov0ajKFoRyBH+Ge2xeUnofn8bySGEPvm5S+eV0S+O0Y2df7dpZ41H4bEpvcfuJaUvNjgdHkzq9iup/yekbu+mVbRGJJ2Ff9LIrBD7D5kp1Meaomus0QWlAvVlknIgMtkm/SPeB360PI68FMRgifuhXA4RRuf18+U/18XxRYB3UilurndTSWbHbe17bL9s7cXmW2gchycm4RsMvh6+v6n4231iY++0263OK4Of3NnTO9IkSqapy+1o3b3oQIXNJlBSBH7ucvTevkW/UYNi+96sUaxkkr94QC3GY2p7oHu6GIkpVsjyD40y328RFJMgz9a5Lv+OWp9fC/eYUhLi6HYIvHwsrPQNLIldvKZqCqTYJ9y5ltEjAYldZCA5pJm9aezrjbj9JX+doVrjMS22sEUq1/4+EteUc4nezG0Si5pd5wtFEzyltgwUCkjsA48Cj9XcFjA7xorYcr2Zr6Be1NG5IKjPpYbIQRYB3XWccT6rj8TQIrLL1e0+/eJlGg2KaDSkOBmJ73kuioKQRI4Vxt5isfj2NySQ+oyqGgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=b6d68866836322107f44871c7eda1e06"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=b6d68866836322107f44871c7eda1e06^sys_idNOT IN363ea263836722107f44871c7eda1ee3,363ea263836722107f44871c7eda1ee4,47d68866836322107f44871c7eda1e4a"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">faad2623836722107f44871c7eda1e6e</block>
+        <comment/>
+        <connected_to>8a76f115-1478-408d-84b0-11d2b0e6281d</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:09:42</sys_created_on>
+        <sys_id>363ea263836722107f44871c7eda1ee3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:43</sys_updated_on>
+        <ui_id>91a7d2e9-aa0f-4913-8246-f8e0750cafeb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQZDkJmh9CxwEKJA2QJPm0gbCiqRsohTJ8mHHFfzvXYqybDQp+sqxN3HIXc4Md6Ce6OBN8O5OXzgnVoosPj1kRKiI4XdPFHScLAjVigkvtKoHICMbkCFu4CcTzkjY3R8RuhaSWT52M2CxxnNLFv0PW4JhQVtAW76hJZ1X5/OqKKrXr8rmfN6UFZsDhwobSmi4xKPLA43Z9YBkP+XndybizluhVuP6euxyewC1ZZFVWWSEP3quGEc+LUjHM9KBYuC13U2I5cBulDwCa6F8EtzBoxPf8MLq7CwebDlKpKMb07IenUpwewkekEqgPtjJOC0od8kcxlsI0i9PsXTgxkSpqcRDIw/VWoZOvU+OkKnBycMEhyS4iUoj9VFHe7vW2w8HlldCDa6Mm1JTkNMKPHrXBB/59IRL3mGjugNj0NHaWL0RQzFy6fKVxEXeSr3FS+N05UAj8RyNhfwK8csBvgcroop32AaLE80GnKD1MInYDm3iZJ8Rt3NLCc4dRaK79dcQKSbJo7g6+RNLqBXGX+DNGz7q2GdPB/tkpvt+iW/tOZtpO/toWPysy5wGiwb53Hnwwe33n0NRzBkytHrFnXuahL/u86L5KZ/LzzPJ+cPQVL8ITXyx38xMURT/Q/PPoRGuTqM+ahsuf8HMPMSApDsnr6lwSO0uYm8P/4y4scPhEvQU2mr7JYo6YvvvWt1XJn0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">3aad2623836722107f44871c7eda1e70</block>
+        <comment/>
+        <connected_to>8a76f115-1478-408d-84b0-11d2b0e6281d</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:09:42</sys_created_on>
+        <sys_id>363ea263836722107f44871c7eda1ee4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:43</sys_updated_on>
+        <ui_id>fdf84eae-279c-4d04-88ea-364573358254</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQZDkJmh9CxwEKJA2QJPm0gbCiqRsohTJ8mHHFfzvXYqybDQp+sqxN3HIXc4Md6Ce6OBN8O5OXzgnVoosPj1kRKiI4XdPFHScLAjVigkvtKoHICMbkCFu4CcTzkjY3R8RuhaSWT52M2CxxnNLFv0PW4JhQVtAW76hJZ1X5/OqKKrXr8rmfN6UFZsDhwobSmi4xKPLA43Z9YBkP+XndybizluhVuP6euxyewC1ZZFVWWSEP3quGEc+LUjHM9KBYuC13U2I5cBulDwCa6F8EtzBoxPf8MLq7CwebDlKpKMb07IenUpwewkekEqgPtjJOC0od8kcxlsI0i9PsXTgxkSpqcRDIw/VWoZOvU+OkKnBycMEhyS4iUoj9VFHe7vW2w8HlldCDa6Mm1JTkNMKPHrXBB/59IRL3mGjugNj0NHaWL0RQzFy6fKVxEXeSr3FS+N05UAj8RyNhfwK8csBvgcroop32AaLE80GnKD1MInYDm3iZJ8Rt3NLCc4dRaK79dcQKSbJo7g6+RNLqBXGX+DNGz7q2GdPB/tkpvt+iW/tOZtpO/toWPysy5wGiwb53Hnwwe33n0NRzBmV2uHYPInB3zV50eSUzyXnmcz8YVyqX8QlvtVvpqUoiv9x+ee4CFenIR+1DZe/YFoeYjTSnZPXVDikdhext4e/RdzY4XAJegpttf0SRR2x/XeVX37HdwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">5fb64466836322107f44871c7eda1e2c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="After Complaint Register">b6d68866836322107f44871c7eda1e06</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:31</sys_created_on>
+        <sys_id>47d68866836322107f44871c7eda1e4a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:43</sys_updated_on>
+        <ui_id>8a76f115-1478-408d-84b0-11d2b0e6281d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNhrfAgcBCqQN0KS5tIGwIimbKEWqfNhxBf97l3rZaFy0aXvsTRxyd2eGHKgl2rvGO/ugr6wVa0WWn54iIlTA8LslCmpOloRqxYQTWhUdEJEtSB828JMJ20jYPx4RuhGSGT50a8BgjeOGLNsftgTDgiqBKr2kKc2zRZ4lSfbmIi0XeZlmLAcOOTaUUHKJR1cjjdlth0Q/5ef2TcCtM0Kth/Xt0OV+BLVhgVWaRIQ/O64YRz4VSMsjUoNi4LTZT4jhwO6UPAIboVwvuIZnK77hwGw+DwcrjhLp4Ma0LAaneri6BgdIxVPnzWScFpTb3hzGK/DSrU6x/sBdE6T2JQ5KOVZr6Wv1vneETA1OLsZbJMGboDRQH3RU9xu9+zCyvBGqc2XYlJqCnFbg0LvSu8CnJVzyGhsVNTQNOlo0Rm9FV4xc6ngtcRFXUu9waHhdMdBAPEZjIb5B/LqDH8GIoOIdtsHinmYJVtCie4nYDm3i5BARu7crCdYeRaK7xVcfKPaSB3FF708ooUY07gonb/mg4xC9fNgnb7ptV3jXjrOZNrOPDQufRRpTb9AgF1sHztvD4bNPkpxpHPgyBH/S4nWpuYR5NU+T+fnUXCzOpeZMXl4ZlewXUQn39JtJSZLkf1T+OirCFv0DH7R1w/9hUp5CLPqZk9dUWKT2ELC3458ibOzxcQl6Cu20+RJEHbHDd2Y3jvZzBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=b6d68866836322107f44871c7eda1e06"/>
+    <sys_hub_flow_variable action="DELETE" query="model=b6d68866836322107f44871c7eda1e06"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:31</sys_created_on>
+        <sys_id>47d68866836322107f44871c7eda1e43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:24:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:31</sys_created_on>
+        <sys_id>b6d68866836322107f44871c7eda1e29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:24:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:31</sys_created_on>
+        <sys_id>c3d68866836322107f44871c7eda1e30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:24:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_b6d68866836322107f44871c7eda1e06"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>77ae77da832322107f44871c7eda1ed1</sys_id>
+        <latest_snapshot>b6d68866836322107f44871c7eda1e06</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch4-05-14-2025_06-04-2025_1836.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN8bd68866836322107f44871c7eda1e64"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"8bd68866836322107f44871c7eda1e64","name":"plan","plan_signature":null}}</plan>
+        <plan_id>77ae77da832322107f44871c7eda1ed1</plan_id>
+        <snapshot>48ee22a3836722107f44871c7eda1e85</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 15:24:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8bd68866836322107f44871c7eda1e64</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:09:43</sys_updated_on>
+        <trigger display_value="">5ce5902a83a322107f44871c7eda1ea5</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=77ae77da832322107f44871c7eda1ed1"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</application>
+        <file_path/>
+        <instance_id>3aa94151979f66905382ff671153af18</instance_id>
+        <instance_name>mav-aug-7844-0031</instance_name>
+        <name>sys_hub_flow_77ae77da832322107f44871c7eda1ed1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=314454000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;After Complaint Register we need to notify the end user&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;after_complaint_register&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created or Updated_1.current.e_mail","label":"Trigger - Record Created or Updated➛citizen Record➛E-mail","reference":"","reference_display":"E-mail","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"e_mail","usedInstances":{"cce0c117-c1cb-4fe2-b04a-05d6e417ae6f":["ah_to"],"6815a7e1-41e9-4fbd-87de-a205dc86a251":["ah_to"],"33891bea-7abb-49a9-8fe7-44865ea729de":["ah_to"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛citizen Record","reference":"x_snc_citizenfee_0_citizen","reference_display":"citizen","type":"reference","base_type":"reference","usedInstances":{"cce0c117-c1cb-4fe2-b04a-05d6e417ae6f":["record"],"33891bea-7abb-49a9-8fe7-44865ea729de":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛citizen Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"status","choices":[{"image":"","missing":false,"rawLabel":"Closed","selected":false,"label":"Closed","used":false,"reference":false,"value":"closed","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"In Progess","selected":false,"label":"In Progess","used":false,"reference":false,"value":"inprogess","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Open","selected":false,"label":"Open","used":false,"reference":false,"value":"open","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"8a76f115-1478-408d-84b0-11d2b0e6281d":["condition"],"91a7d2e9-aa0f-4913-8246-f8e0750cafeb":["condition"],"fdf84eae-279c-4d04-88ea-364573358254":["condition"]}},{"name":"Created or Updated_1.current.feedback_type","label":"Trigger - Record Created or Updated➛citizen Record➛FeedBack Type","reference":"","reference_display":"FeedBack Type","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"feedback_type","choices":[{"image":"","missing":false,"rawLabel":"Complaint","selected":false,"label":"Complaint","used":false,"reference":false,"value":"complaint","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Feedback","selected":false,"label":"Feedback","used":false,"reference":false,"value":"feedback","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Request","selected":false,"label":"Request","used":false,"reference":false,"value":"request","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Suggestion","selected":false,"label":"Suggestion","used":false,"reference":false,"value":"suggestion","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{}},{"name":"Updated_1.current.e_mail","label":"Trigger - Record Updated➛citizen Record➛E-mail","reference":"","reference_display":"E-mail","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"e_mail","usedInstances":{"6de04e38-8e9a-43c2-a062-0f68126a52e0":["ah_to"]}},{"name":"Updated_1.current.feedback_type","label":"Trigger - Record Updated➛citizen Record➛FeedBack Type","reference":"","reference_display":"FeedBack Type","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"feedback_type","choices":[{"image":"","missing":false,"rawLabel":"Complaint","selected":false,"label":"Complaint","used":false,"reference":false,"value":"complaint","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Feedback","selected":false,"label":"Feedback","used":false,"reference":false,"value":"feedback","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Request","selected":false,"label":"Request","used":false,"reference":false,"value":"request","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Suggestion","selected":false,"label":"Suggestion","used":false,"reference":false,"value":"suggestion","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"8a76f115-1478-408d-84b0-11d2b0e6281d":["condition"]}},{"name":"Updated_1.current.status","label":"Trigger - Record Updated➛citizen Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"status","choices":[{"image":"","missing":false,"rawLabel":"Closed","selected":false,"label":"Closed","used":false,"reference":false,"value":"closed","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"In Progess","selected":false,"label":"In Progess","used":false,"reference":false,"value":"inprogess","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Open","selected":false,"label":"Open","used":false,"reference":false,"value":"open","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"528813dc-f770-4de8-978d-64d74f08eeda":["condition"]}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;b6d68866836322107f44871c7eda1e06&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;After Complaint Register&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;5ce5902a83a322107f44871c7eda1ea5&lt;/remote_trigger_id&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 14:48:48&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;77ae77da832322107f44871c7eda1ed1&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;After Complaint Register&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_77ae77da832322107f44871c7eda1ed1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:31:43&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_flow_record_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition table="x_snc_citizenfee_0_citizen"&gt;^EQ&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;name/&gt;&lt;on_delete&gt;false&lt;/on_delete&gt;&lt;on_insert&gt;true&lt;/on_insert&gt;&lt;on_update&gt;true&lt;/on_update&gt;&lt;published_version/&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;run_on_extended&gt;false&lt;/run_on_extended&gt;&lt;run_when_setting&gt;both&lt;/run_when_setting&gt;&lt;run_when_user_list/&gt;&lt;run_when_user_setting&gt;any&lt;/run_when_user_setting&gt;&lt;sys_class_name&gt;sys_flow_record_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 16:30:09&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5ce5902a83a322107f44871c7eda1ea5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 16:30:09&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_citizenfee_0_citizen&lt;/table&gt;&lt;trigger_definition/&gt;&lt;/sys_flow_record_trigger&gt;&lt;sys_trigger_runner_mapping action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;data&gt;{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}&lt;/data&gt;&lt;identifier&gt;77ae77da832322107f44871c7eda1ed1&lt;/identifier&gt;&lt;runner&gt;FDTriggerRunner&lt;/runner&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:09:43&lt;/sys_created_on&gt;&lt;sys_id&gt;4b3ee263836722107f44871c7eda1e30&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:43&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;5ce5902a83a322107f44871c7eda1ea5&lt;/trigger&gt;&lt;/sys_trigger_runner_mapping&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN4b3ee263836722107f44871c7eda1e30"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=77ae77da832322107f44871c7eda1ed1^sys_idNOT INb7ae77da832322107f44871c7eda1ed3"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;77ae77da832322107f44871c7eda1ed1&lt;/id&gt;&lt;name&gt;After Complaint Register&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 14:48:48&lt;/sys_created_on&gt;&lt;sys_id&gt;b7ae77da832322107f44871c7eda1ed3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 14:48:48&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b7ae77da832322107f44871c7eda1ed3"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN43b68066836322107f44871c7eda1e5a,93b64466836322107f44871c7eda1e06,dfb64466836322107f44871c7eda1e02"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/model&gt;&lt;model_id&gt;77ae77da832322107f44871c7eda1ed1&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:23:59&lt;/sys_created_on&gt;&lt;sys_id&gt;43b68066836322107f44871c7eda1e5a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:23:59&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=43b68066836322107f44871c7eda1e5a"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/model&gt;&lt;model_id&gt;77ae77da832322107f44871c7eda1ed1&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:00&lt;/sys_created_on&gt;&lt;sys_id&gt;93b64466836322107f44871c7eda1e06&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:24:00&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=93b64466836322107f44871c7eda1e06"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/model&gt;&lt;model_id&gt;77ae77da832322107f44871c7eda1ed1&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:23:59&lt;/sys_created_on&gt;&lt;sys_id&gt;dfb64466836322107f44871c7eda1e02&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:23:59&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dfb64466836322107f44871c7eda1e02"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN3aad2623836722107f44871c7eda1e6a"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Created or Updated&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:07:15&lt;/sys_created_on&gt;&lt;sys_id&gt;3aad2623836722107f44871c7eda1e6a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:41&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN72ad2623836722107f44871c7eda1e70,72ad2623836722107f44871c7eda1e71,fead2623836722107f44871c7eda1e6d"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;91a7d2e9-aa0f-4913-8246-f8e0750cafeb&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:07:15&lt;/sys_created_on&gt;&lt;sys_id&gt;72ad2623836722107f44871c7eda1e70&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:12:31&lt;/sys_updated_on&gt;&lt;ui_id&gt;6815a7e1-41e9-4fbd-87de-a205dc86a251&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1YbW/bNhD+K4TQj4aj2ImdZJ8SB1kDpO3QeC2GulApkbK5UKRGUk7dQP99R4myZDvzS+NhCZZv1vGOfO74PEeaXx48Rrwz74ic+L0wPsJ9v9vp+v5J5/Q07J7G/kn/1D+MiNfyBE4oeCoaSWW/p5hn1gA/CdMpx7NPtSWaME4UFd7Zl68tL8UKgg1V3tnD0tC2q3McUg6uQ6zG1KCPFYplVGaW2m8ioyyhwgSsMt64CS7dCLq+hBEIsqj8lke/GyoIBTgx5pq2vAQLgo1Us7lFUUw+CF4bJkwYmPJcaxkxbKhGZkIRTTDj6J6ZCcKoBNb27HzfNfsB4LodO1VMoQaRxcpExAgg8hrmwJUUhq/r4fgSG3xrVBaZTM0rLVlEdVlNQmOccTNo2kqHD6lhUpQhBoe8ipY8S8T7sojefILGTmYawNDU1sYmC4tD4vHtRN5/rMBeMVFU0VWFywjz+Vd8S7GKJleMcrvVIktC8G152BjFwsxYmEAKDl71OkEB1a4FnpTTYisTnKZMjINUySkrFgT4SXvM4aMdc3kP8ZqNRRtHNtc27B5uX4H9sjB/worZxN/BNBCctzw90wOOta7Th/oHf2UWfVmMRTg2OigIZ4MjxVJzDktNqUs2bzk1HZ6u4zM5qnnbmHOvitoCQa0oy4bHETk1rdhumrHofTngtHS4o5ZKRjkpDUE/ppR4qRxkHLy5fE78Rfn8g2yeh1zmIthaL4u6+He4DyTRQUlgl1ux+E9oYpMS/F4vDHvhcb9b8/A0ikk/jHu4H3Vr3t1D/1QJVndB0T8bcjhc1YPrDLtpYgsslSag5/KMUPS5ArUOpxNJKCU0MbGsEEB6cFVUd66QzpNOm5KayEgEm8lncMbMIVljfQKZCTaIaaRht9poKBFzWTUiWmgmM5Rk2oCbgZEF8S0cW0fPV3eODs56+ShXXoQw9y/A4/UHAa6JjSeBkQ3ZPTwMgIKGEiQV+j0l9mdw2I4ypSyhaGBJludoVZ07RO6m4C2SmZ9qcjUzJ1QN+yjGSzq9rYxOo931Gi0PrRWJNg4p//nK5aWowQLnLGEFIUod718gZC2nqL9Aoyja7zVti8UrQg8Gq0h2IfTRzx06r4x+cYw+XPtvmvYWeBTum9JbrF5R+mKJ0+HOpD5+JfX/hNTH62kVLRBJZ+GfNDINYv8hM4WuRSzh1ltcn681uqBQA/SbkrBbmpJV7m8XtOMVZnMelTxu51k8ltkuMum9Xmb+c5XsXxJ4LZXizmJvlWS230a/xfLzRl8uvoLGcXhiEr7E4LfDdzc1f/tPbPO94+Nu75XBT+7z6T3pECXT1OW2t15fdqDSZhOoKAI/1zl6BwfoV2pQbB+XNYqVTIr3D6jFeExtD3QPGSMxxQpZ/qFR5vtdgmISFNk61/mfU+vzS+keU0pCHN0NgZebwirfwJLYxWuqpkCKbcKdazMayglbQMklTc2m8MrXcsgsxRu5ZbCRLrJ8ot9YqMKrStVgk+mNWRZeLiRVTCpmZpuCKj8IGwnY74sMOlHjlcvypJzR/qpm+zYSbynnEr15sDuat2z0Z4omeEotJyiwidi3LwUezY3OYXSMFbHcefPQ2MK8PRLXxXsamItE8jaCGVlxPyie0e4nVCBmLIROXyOQWsqhgZK2Xby4TBgW3QFfXYWZPrP4io98JAZlxq6YZ/U6IwEkwMpYTVtzkxoweO4+0VA2R43M7bojMZxgcWcBQhEGzEBHFOi2TAwNKU5G4ltRXEWh4YmijPDt5Xn+9W/KP1NiHxwAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;fdf84eae-279c-4d04-88ea-364573358254&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:07:15&lt;/sys_created_on&gt;&lt;sys_id&gt;72ad2623836722107f44871c7eda1e71&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:12:31&lt;/sys_updated_on&gt;&lt;ui_id&gt;33891bea-7abb-49a9-8fe7-44865ea729de&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1YbXPaOBD+KxpPP3LUQICQ+5SQyaUzaTtTuHZuSseVLRl0kSWfJJNQhv9+K1vGvOQINNxcMpdvaLUrPbt6npXR17nHiHfmnZBTvxPGJ7jrt5ot3z9t9nphqxf7p92e34iIV/METih4KhpJZcdTzDNrmM/7imJDCZIK/Z4S+zNo1KNMKSrMYgGuhOmU49lnFwGWaMI4gXnv7Ou3mpdiBYsbqryz+cbUvug4DikH1yFWY2rQpxLlJmozS+2YyChLAF7ASuONW+DSzaB3lzADQRaVX/PovaGCUIATY65pzUuwgFylmi0tUAbyUfDKMGHCwJLnWsuIQV00MhOKaIIZR3fMTBBGBbC6Z9e71+wHgGs17VIxhRpEFisTESOAyFsxB66kMP2umo4vscEDo7LIZGpZackiqotqEhrjjJv+qq1w+JgaJkURYnDIy2jJs0R8KIroLRdYOclMAxia2trYZGFzSDweTOTdpxLsFRN5FV1VuIwwX47iAcUqmlwxyu1RiywJwbfmYWMUCzNjYQIpOHhV+wQ5VLsXeFJO86NMcJoyMQ5SJacs3xDgJ/Uxh0E95vIO4jUbizqObK51OD1cvwL7ZW7+jBWzib+HZSB4UfP0TPc51rpKH+of/JVZ9EUx1uHY6CAnnA2OFEvNOWw1pS7ZRc2prdHbxWdyUvF2Zc1KcfeBFlEQMQN0ETGlgV8OtrVWTRwmuT0gVpKzdHkYspPblu1mNRZ9KCac2BoHiq2gnNPaEARmih5QSAsZB2+pr1N/XV//oKvnoaelSvYW1Lpw/h1xAEl0UDDc5ZZv/hOieUwqfqcThp2w3W1VPOxFMemGcQd3o1bFuztosCrB6jbIG+yKXhrbsnCt4zBN7IGl1AQ0ZZ4Rir6UoHbhdCIJpYQuJzYVAkjfXuXVXSqk+aTrqKAmMhLBYfIZXEJLSNZYXVFmgg1iGmk4rToaSsRcVisRNTSTGUoybcDNwMya+NbutZPnqztHB2e9fJArL0KYxxdge/dFgCti40lg5N4fhnUaWJItFmhbnQdEHqbgPZJZ3mpyOzMnVA3nKMYbOh2URqfR1m6NFpfWlkRXLin/+crlpajBAucsYTkhCh0fXyBkJ6eov0ajKFoRyBH+Ge2xeUnofn8bySGEPvm5S+eV0S+O0Y2df7dpZ41H4bEpvcfuJaUvNjgdHkzq9iup/yekbu+mVbRGJJ2Ff9LIrBD7D5kp1Meaomus0QWlAvVlknIgMtkm/SPeB360PI68FMRgifuhXA4RRuf18+U/18XxRYB3UilurndTSWbHbe17bL9s7cXmW2gchycm4RsMvh6+v6n4231iY++0263OK4Of3NnTO9IkSqapy+1o3b3oQIXNJlBSBH7ucvTevkW/UYNi+96sUaxkkr94QC3GY2p7oHu6GIkpVsjyD40y328RFJMgz9a5Lv+OWp9fC/eYUhLi6HYIvHwsrPQNLIldvKZqCqTYJ9y5ltEjAYldZCA5pJm9aezrjbj9JX+doVrjMS22sEUq1/4+EteUc4nezG0Si5pd5wtFEzyltgwUCkjsA48Cj9XcFjA7xorYcr2Zr6Be1NG5IKjPpYbIQRYB3XWccT6rj8TQIrLL1e0+/eJlGg2KaDSkOBmJ73kuioKQRI4Vxt5isfj2NySQ+oyqGgAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id&gt;8a76f115-1478-408d-84b0-11d2b0e6281d&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:07:15&lt;/sys_created_on&gt;&lt;sys_id&gt;fead2623836722107f44871c7eda1e6d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:12:31&lt;/sys_updated_on&gt;&lt;ui_id&gt;cce0c117-c1cb-4fe2-b04a-05d6e417ae6f&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1ZW2/bNhT+K4TQR8NV4sS57KlxkDVAL0DttRjqQqVIyuZCkRpJxfUC//cdStTFduZL42EtljeTPIf8zjnfR1L054eA0+AyOKHnYT9OTvBZ2DvuheH58cVF3LtIwvOzi/CI0KATSJwysNSMKO3a91jkruPhYaAZtowipdFvGXU/o6MuybVm0i4WYEq5yQSef/Qe0EOmXFAYDy4/f+kEGdYwuWU6uHxYGdoVncAxE2A6wnrCLPpQoVxFbeeZa1NF8hTgRbzqfOMnuPYj6PYaRsDJoQo7AftmmaQM4CRYGNYJUiwhVqXndQ+kgb6XoumYcmlhylfGKMIhLwbZKUMsxVygGbdThFEJrBu4+b4Z/heA6x27qRIGOSAOK5eEU0AUtLojn1IYvm2Gk2ts8dDqnNhc15lWnDBTZpOyBOfCDtp9pcH7zHIlSxeLY1F5K5Gn8l2ZxKCeoFXJ3AAYlrncuGBhcQg8GU7V7EMF9obLIos+K0IRLOpWMmRYk+kNZ8KVWuZpDLadAFureZxbBxNIIcCqWScqoLq1wJIJVpQyxVnG5STKtLrnxYIAP+1OBDS6iVAz8Dd8IruYuFi7UD3cvYH+66L7I9bcBf4WpgHnRScwczMQ2JgmfMh/9Gfu0JfJWIbjvKOCcM6ZaJ7ZV7DUPfPBLjpebUcXm/hMTxretuZsFPctMpJEhFugi0wYi8Kqsa61ZmA/ye0AsZGco8vjkL3c1vretH3Ru3LAi+1oT7GVlPNaG4HAbLkHlNJC1sOr9XUeLuvrH3T1Y+ipVsnOgloWzr8jDiCJiUqG+9iKxb9DNNukEvb7cdyPT896DQ8vSELP4qSPz0iv4d0MNlidYn0XFRtsSy9H67LwW8d+mtgBS6UJ2JRFThn6VIHahNOLJFYKdjm5qhBA+vKmyG6tkOMnHUclNZFVCIop5nAI1ZBcZ3NE2Sm2iBtkoFpdNFKI+6haHh00VzlKc2PBzMLIkviWzrWTH1d3ng6+9/pRrvwUwjy8AE83HwS4ITaeRlbtfDHsssiRbLFA6+rcw3M/Be8QTH2qqfXIvFAN1FFOVnQ6rDq9RnubNVoeWmsSbR1S4Y8rl59FDQ644CkvCFHq+PACoRs5xcIlGhHSEsgBvox2WLwi9GCwjmQfQp9836HzzOifjtFHGz+3WX+JR/GhKb3D6hWlr1Y4He9N6tNnUv9PSH26mVZkiUgmj/9gxLaI/bvKNbqViYJbb3F9fo0NumJMomFOoFomyQXcpT8wwmBxuq6D/SfY82qzPb5KNsM6usci3kc+/edLzn+unoNJpep0UFuMgNZjulrUysIbmZccL2/Ris4Pe17ssHx9XpSLr6HxlJ/aVKwQ/vXo7ZuG7mdPPC36p6e9/jPhn3xcZDN6TLXKMh/bwY6McsNakkFBkTUNLBsGL1+iX5lFiXvENijRKi2eUSAXkwlzW6Z/DxnLe6yR4x8a52HYoyihURGtN62/cZ3NL6V5whiNMbkbAS+3uVW2kSOx9zdM3wMpdnH3pm1vSCeUgNFrltlt7pWt45Bd8bdqV2+rvGv5X8DWTBVWVawW29xsDbOw8i6Z5kpzO9/mVNmB21hCwa9y2Ipar2WOKOWM7lc129exfM2EUOjFgyvpouO8PzE0xffMkaI47N0bmgaLdqUXMDrBmjryvHho1XDRHctbCxMYFLvrA9woZmAHs/jHO80yzdybHUyNoGxY2+IPLTBESa7BBKpSCs2BKS4mlpM7ILDPODeXDm/RWIzloMyAT64bKn/B0CtfMzRSrr8p4cLHOeNCIKksT+bFS6GCHcSh1My9LGKJ8uJ5p0AymmJ556wgSYPyfws0LANHI4bTsfxaJF8z2BFlkWZoB3AUffkbJ5QH6sgcAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN1bb64466836322107f44871c7eda1e2d,f2ad2623836722107f44871c7eda1e6f,faad2623836722107f44871c7eda1e70"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;5fb64466836322107f44871c7eda1e2c&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:00&lt;/sys_created_on&gt;&lt;sys_id&gt;1bb64466836322107f44871c7eda1e2d&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:41&lt;/sys_updated_on&gt;&lt;ui_id&gt;8a76f115-1478-408d-84b0-11d2b0e6281d&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1UXWvbMBT9K8HPxvijDmveSkdhsK2wdn3ZirmW5ERMljR9JM2M//uu/JGENmWj7HFv0pHuveccHdRFyjvtnb1XV9bytYxW3x7jiMuA4bqLJLQsWkVEScodV7IagDjagvDhAJeUWy1g/3BEyIYLatjUTYPBGsdMtOqeHbm9ZpWAmgksvHOGyzWWc4q7JoUmuyQZKfJlkadp/u4iq5dFneW0AAYF3psLr2dyi48DEr/KOsxD3M6TlKGBVpbGEXtyTFKGoxsQlsVRC5KCU2Z/QAwDeivFEdhw6UbFLTxZ/gt752UZLjYMNZLJjsO2mqyaXVKcsFsdCI6Ig1rMFirhW/l51BFMZg144U5M9hb7MR1IBxYTpeZuo3Zf5oE3XA4Cp0OhCIjDDhzaUHvHbHgYJliLjaoWtEZzKm3Ulg/FyKVN1gI3SSPUDoeGpCRAAvEEPYLkBvH3A/wAhgcVn7ANFo80a7CcVEOqsJ0zKKEfbKl++kBoFDhJqUY38IIlhmt3hXO2bGLdxy8jeZLGrrvGR3KMLpRZfNU0LKssId6gHS6xDpy3ff/dp2lBFQ58Gd+3tPgXeb+EsimztDyf94vlubyfSfrrIc//EPLwLH+Z8TRN/4f8NOTcVmNYJ23D8Ddn/DEEepxgx9xQRrhFIvcB+zD/zuFgjwHg5BTaKfMjSDhi/W82d4Kv5wUAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;faad2623836722107f44871c7eda1e6e&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;8a76f115-1478-408d-84b0-11d2b0e6281d&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else If"&gt;666e5545c3e232002841b63b12d3ae99&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:07:15&lt;/sys_created_on&gt;&lt;sys_id&gt;f2ad2623836722107f44871c7eda1e6f&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:41&lt;/sys_updated_on&gt;&lt;ui_id&gt;91a7d2e9-aa0f-4913-8246-f8e0750cafeb&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Uy27bMBD8FUNnQdCjCVrfghQBCrQN0KS5tIGwIlc2UYpk+bDjCv73LvWwjTzQIoeeeiOH3N2Z4YB9ooM3wbtbfeGcWKlk+e0+TYSKGK37REGHyTJhWnHhhVb1AKTJBmSIB7TkwhkJu7sjwtZCcotTNwOWajzaZNk/OvI7g7WEBiUV3ngr1IrKBaddm0NbvGMFq8rzqszz8u2bojmvmqLkFSCUdG8uvJzJLT4OSPoi6ziPcDdP0pZHWkWeJvjgUXGk0S1Ih2nSgeLgtd0dEIvAr5U8Amuh/Ki4gwcnflHv8uwsXmyRNLLJjsO2nqyaXdKC4bWJBEfEQyNnC7UMnfo86ogmYwtB+hOTg6N+aCLpyGKi1N6s9fbLPPBKqEHgdCg1A3nYgScbmuDRxYdBiR01qjswhsypjdUbMRQTly5bSdpkrdRbGhqTkgGLxDPyCLIrwt8P8B1YEVV8ojZUPNJswAlWD6midt6ShP1gS/0zREKjwElKPbpBFxyzwvgLmrPBifU+fRrJkzT2/SU9kke+0Hbx1fC4rIuMBUt2+Mx58MHt999Dnlec+Fi9QueeZvjVff5B8ovnkv9M5l+Oe/mHuMcH+su053n+P+6ncReuHmM7aRuGvzrt9zHa4wQ35oYjE46I3Ebsw/xPx4MdBUCwU2ir7Y8o4YjtfwPJyYtE8QUAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;3aad2623836722107f44871c7eda1e70&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;8a76f115-1478-408d-84b0-11d2b0e6281d&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else If"&gt;666e5545c3e232002841b63b12d3ae99&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:07:15&lt;/sys_created_on&gt;&lt;sys_id&gt;faad2623836722107f44871c7eda1e70&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:42&lt;/sys_updated_on&gt;&lt;ui_id&gt;fdf84eae-279c-4d04-88ea-364573358254&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Uy27bMBD8FUNnQdCjCVrfghQBCrQN0KS5tIGwIlc2UYpk+bDjCv73LvWwjTzQIoeeeiOH3N2Z4YB9ooM3wbtbfeGcWKlk+e0+TYSKGK37REGHyTJhWnHhhVb1AKTJBmSIB7TkwhkJu7sjwtZCcotTNwOWajzaZNk/OvI7g7WEBiUV3ngr1IrKBaddm0NbvGMFq8rzqszz8u2bojmvmqLkFSCUdG8uvJzJLT4OSPoi6ziPcDdP0pZHWkWeJvjgUXGk0S1Ih2nSgeLgtd0dEIvAr5U8Amuh/Ki4gwcnflHv8uwsXmyRNLLJjsO2nqyaXdKC4bWJBEfEQyNnC7UMnfo86ogmYwtB+hOTg6N+aCLpyGKi1N6s9fbLPPBKqEHgdCg1A3nYgScbmuDRxYdBiR01qjswhsypjdUbMRQTly5bSdpkrdRbGhqTkgGLxDPyCLIrwt8P8B1YEVV8ojZUPNJswAlWD6midt6ShP1gS/0zREKjwElKPbpBFxyzwvgLmrPBifU+fRrJkzT2/SU9kke+0Hbx1fC4rIuMBUt2+Mx58MHt999DnlecSe3ovZ8E+HVN/kHmi+cy/0zaXw56+Yegx6f5y5znef4/6KdBF64eAztpG4a/Ouf3MdTjBDfmhiMTjojcRuzD/EPHgx0FQLBTaKvtjyjhiO1/A3WrVO7rBQAA&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:00&lt;/sys_created_on&gt;&lt;sys_id&gt;57b64466836322107f44871c7eda1e05&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:24:00&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:00&lt;/sys_created_on&gt;&lt;sys_id&gt;d3b64466836322107f44871c7eda1e08&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:24:00&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:23:59&lt;/sys_created_on&gt;&lt;sys_id&gt;d3b68066836322107f44871c7eda1e62&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:23:59&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_77ae77da832322107f44871c7eda1ed1"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;After Complaint Register we need to notify the end user&lt;/description&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;after_complaint_register&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created or Updated_1.current.e_mail","label":"Trigger - Record Created or Updated➛citizen Record➛E-mail","reference":"","reference_display":"E-mail","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"e_mail","usedInstances":{"cce0c117-c1cb-4fe2-b04a-05d6e417ae6f":["ah_to"],"6815a7e1-41e9-4fbd-87de-a205dc86a251":["ah_to"],"33891bea-7abb-49a9-8fe7-44865ea729de":["ah_to"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛citizen Record","reference":"x_snc_citizenfee_0_citizen","reference_display":"citizen","type":"reference","base_type":"reference","usedInstances":{"cce0c117-c1cb-4fe2-b04a-05d6e417ae6f":["record"],"33891bea-7abb-49a9-8fe7-44865ea729de":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛citizen Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"status","choices":[{"image":"","missing":false,"rawLabel":"Closed","selected":false,"label":"Closed","used":false,"reference":false,"value":"closed","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"In Progess","selected":false,"label":"In Progess","used":false,"reference":false,"value":"inprogess","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Open","selected":false,"label":"Open","used":false,"reference":false,"value":"open","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"8a76f115-1478-408d-84b0-11d2b0e6281d":["condition"],"91a7d2e9-aa0f-4913-8246-f8e0750cafeb":["condition"],"fdf84eae-279c-4d04-88ea-364573358254":["condition"]}},{"name":"Created or Updated_1.current.feedback_type","label":"Trigger - Record Created or Updated➛citizen Record➛FeedBack Type","reference":"","reference_display":"FeedBack Type","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"feedback_type","choices":[{"image":"","missing":false,"rawLabel":"Complaint","selected":false,"label":"Complaint","used":false,"reference":false,"value":"complaint","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Feedback","selected":false,"label":"Feedback","used":false,"reference":false,"value":"feedback","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Request","selected":false,"label":"Request","used":false,"reference":false,"value":"request","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Suggestion","selected":false,"label":"Suggestion","used":false,"reference":false,"value":"suggestion","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{}},{"name":"Updated_1.current.e_mail","label":"Trigger - Record Updated➛citizen Record➛E-mail","reference":"","reference_display":"E-mail","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"e_mail","usedInstances":{"6de04e38-8e9a-43c2-a062-0f68126a52e0":["ah_to"]}},{"name":"Updated_1.current.feedback_type","label":"Trigger - Record Updated➛citizen Record➛FeedBack Type","reference":"","reference_display":"FeedBack Type","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"feedback_type","choices":[{"image":"","missing":false,"rawLabel":"Complaint","selected":false,"label":"Complaint","used":false,"reference":false,"value":"complaint","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Feedback","selected":false,"label":"Feedback","used":false,"reference":false,"value":"feedback","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Request","selected":false,"label":"Request","used":false,"reference":false,"value":"request","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Suggestion","selected":false,"label":"Suggestion","used":false,"reference":false,"value":"suggestion","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"8a76f115-1478-408d-84b0-11d2b0e6281d":["condition"]}},{"name":"Updated_1.current.status","label":"Trigger - Record Updated➛citizen Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_citizenfee_0_citizen","column_name":"status","choices":[{"image":"","missing":false,"rawLabel":"Closed","selected":false,"label":"Closed","used":false,"reference":false,"value":"closed","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"In Progess","selected":false,"label":"In Progess","used":false,"reference":false,"value":"inprogess","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}},{"image":"","missing":false,"rawLabel":"Open","selected":false,"label":"Open","used":false,"reference":false,"value":"open","parameters":{"name":"x_snc_citizenfee_0_citizen","dependent_values":[""]}}],"usedInstances":{"528813dc-f770-4de8-978d-64d74f08eeda":["condition"]}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;After Complaint Register&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="After Complaint Register"&gt;77ae77da832322107f44871c7eda1ed1&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:31&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b6d68866836322107f44871c7eda1e06&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:43&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=b6d68866836322107f44871c7eda1e06^sys_idNOT INf2d68866836322107f44871c7eda1e07"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;b6d68866836322107f44871c7eda1e06&lt;/id&gt;&lt;name&gt;After Complaint Register&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:31&lt;/sys_created_on&gt;&lt;sys_id&gt;f2d68866836322107f44871c7eda1e07&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:24:31&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f2d68866836322107f44871c7eda1e07"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=b6d68866836322107f44871c7eda1e06^sys_idNOT IN4fd68866836322107f44871c7eda1e2b,8bd68866836322107f44871c7eda1e32,f2d68866836322107f44871c7eda1e08"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/model&gt;&lt;model_id&gt;b6d68866836322107f44871c7eda1e06&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:31&lt;/sys_created_on&gt;&lt;sys_id&gt;4fd68866836322107f44871c7eda1e2b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4fd68866836322107f44871c7eda1e2b"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/model&gt;&lt;model_id&gt;b6d68866836322107f44871c7eda1e06&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:31&lt;/sys_created_on&gt;&lt;sys_id&gt;8bd68866836322107f44871c7eda1e32&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8bd68866836322107f44871c7eda1e32"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/model&gt;&lt;model_id&gt;b6d68866836322107f44871c7eda1e06&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:31&lt;/sys_created_on&gt;&lt;sys_id&gt;f2d68866836322107f44871c7eda1e08&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f2d68866836322107f44871c7eda1e08"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b6d68866836322107f44871c7eda1e06^sys_idNOT IN8fd68866836322107f44871c7eda1e4c"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Created or Updated&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:32&lt;/sys_created_on&gt;&lt;sys_id&gt;8fd68866836322107f44871c7eda1e4c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:42&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=b6d68866836322107f44871c7eda1e06^sys_idNOT INf63ea263836722107f44871c7eda1ee0,fe3ea263836722107f44871c7eda1edf,fe3ea263836722107f44871c7eda1ee0"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;91a7d2e9-aa0f-4913-8246-f8e0750cafeb&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:09:42&lt;/sys_created_on&gt;&lt;sys_id&gt;f63ea263836722107f44871c7eda1ee0&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:42&lt;/sys_updated_on&gt;&lt;ui_id&gt;6815a7e1-41e9-4fbd-87de-a205dc86a251&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1YbW/bNhD+K4TQj4aj2ImdZJ8SB1kDpO3QeC2GulApkbK5UKRGUk7dQP99R4myZDvzS+NhCZZv1vGOfO74PEeaXx48Rrwz74ic+L0wPsJ9v9vp+v5J5/Q07J7G/kn/1D+MiNfyBE4oeCoaSWW/p5hn1gA/CdMpx7NPtSWaME4UFd7Zl68tL8UKgg1V3tnD0tC2q3McUg6uQ6zG1KCPFYplVGaW2m8ioyyhwgSsMt64CS7dCLq+hBEIsqj8lke/GyoIBTgx5pq2vAQLgo1Us7lFUUw+CF4bJkwYmPJcaxkxbKhGZkIRTTDj6J6ZCcKoBNb27HzfNfsB4LodO1VMoQaRxcpExAgg8hrmwJUUhq/r4fgSG3xrVBaZTM0rLVlEdVlNQmOccTNo2kqHD6lhUpQhBoe8ipY8S8T7sojefILGTmYawNDU1sYmC4tD4vHtRN5/rMBeMVFU0VWFywjz+Vd8S7GKJleMcrvVIktC8G152BjFwsxYmEAKDl71OkEB1a4FnpTTYisTnKZMjINUySkrFgT4SXvM4aMdc3kP8ZqNRRtHNtc27B5uX4H9sjB/worZxN/BNBCctzw90wOOta7Th/oHf2UWfVmMRTg2OigIZ4MjxVJzDktNqUs2bzk1HZ6u4zM5qnnbmHOvitoCQa0oy4bHETk1rdhumrHofTngtHS4o5ZKRjkpDUE/ppR4qRxkHLy5fE78Rfn8g2yeh1zmIthaL4u6+He4DyTRQUlgl1ux+E9oYpMS/F4vDHvhcb9b8/A0ikk/jHu4H3Vr3t1D/1QJVndB0T8bcjhc1YPrDLtpYgsslSag5/KMUPS5ArUOpxNJKCU0MbGsEEB6cFVUd66QzpNOm5KayEgEm8lncMbMIVljfQKZCTaIaaRht9poKBFzWTUiWmgmM5Rk2oCbgZEF8S0cW0fPV3eODs56+ShXXoQw9y/A4/UHAa6JjSeBkQ3ZPTwMgIKGEiQV+j0l9mdw2I4ypSyhaGBJludoVZ07RO6m4C2SmZ9qcjUzJ1QN+yjGSzq9rYxOo931Gi0PrRWJNg4p//nK5aWowQLnLGEFIUod718gZC2nqL9Aoyja7zVti8UrQg8Gq0h2IfTRzx06r4x+cYw+XPtvmvYWeBTum9JbrF5R+mKJ0+HOpD5+JfX/hNTH62kVLRBJZ+GfNDINYv8hM4WuRSzh1ltcn681uqBQA/SbkrBbmpJV7m8XtOMVZnMelTxu51k8ltkuMum9Xmb+c5XsXxJ4LZXizmJvlWS230a/xfLzRl8uvoLGcXhiEr7E4LfDdzc1f/tPbPO94+Nu75XBT+7z6T3pECXT1OW2t15fdqDSZhOoKAI/1zl6BwfoV2pQbB+XNYqVTIr3D6jFeExtD3QPGSMxxQpZ/qFR5vtdgmISFNk61/mfU+vzS+keU0pCHN0NgZebwirfwJLYxWuqpkCKbcKdazMayglbQMklTc2m8MrXcsgsxRu5ZbCRLrJ8ot9YqMKrStVgk+mNWRZeLiRVTCpmZpuCKj8IGwnY74sMOlHjlcvypJzR/qpm+zYSbynnEr15sDuat2z0Z4omeEotJyiwidi3LwUezY3OYXSMFbHcefPQ2MK8PRLXxXsamItE8jaCGVlxPyie0e4nVCBmLIROXyOQWsqhgZK2Xby4TBgW3QFfXYWZPrP4io98JAZlxq6YZ/U6IwEkwMpYTVtzkxoweO4+0VA2R43M7bojMZxgcWcBQhEGzEBHFOi2TAwNKU5G4ltRXEWh4YmijPDt5Xn+9W/KP1NiHxwAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id&gt;8a76f115-1478-408d-84b0-11d2b0e6281d&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:09:42&lt;/sys_created_on&gt;&lt;sys_id&gt;fe3ea263836722107f44871c7eda1edf&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:42&lt;/sys_updated_on&gt;&lt;ui_id&gt;cce0c117-c1cb-4fe2-b04a-05d6e417ae6f&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1ZW2/bNhT+K4TQR8NV4sS57KlxkDVAL0DttRjqQqVIyuZCkRpJxfUC//cdStTFduZL42EtljeTPIf8zjnfR1L054eA0+AyOKHnYT9OTvBZ2DvuheH58cVF3LtIwvOzi/CI0KATSJwysNSMKO3a91jkruPhYaAZtowipdFvGXU/o6MuybVm0i4WYEq5yQSef/Qe0EOmXFAYDy4/f+kEGdYwuWU6uHxYGdoVncAxE2A6wnrCLPpQoVxFbeeZa1NF8hTgRbzqfOMnuPYj6PYaRsDJoQo7AftmmaQM4CRYGNYJUiwhVqXndQ+kgb6XoumYcmlhylfGKMIhLwbZKUMsxVygGbdThFEJrBu4+b4Z/heA6x27qRIGOSAOK5eEU0AUtLojn1IYvm2Gk2ts8dDqnNhc15lWnDBTZpOyBOfCDtp9pcH7zHIlSxeLY1F5K5Gn8l2ZxKCeoFXJ3AAYlrncuGBhcQg8GU7V7EMF9obLIos+K0IRLOpWMmRYk+kNZ8KVWuZpDLadAFureZxbBxNIIcCqWScqoLq1wJIJVpQyxVnG5STKtLrnxYIAP+1OBDS6iVAz8Dd8IruYuFi7UD3cvYH+66L7I9bcBf4WpgHnRScwczMQ2JgmfMh/9Gfu0JfJWIbjvKOCcM6ZaJ7ZV7DUPfPBLjpebUcXm/hMTxretuZsFPctMpJEhFugi0wYi8Kqsa61ZmA/ye0AsZGco8vjkL3c1vretH3Ru3LAi+1oT7GVlPNaG4HAbLkHlNJC1sOr9XUeLuvrH3T1Y+ipVsnOgloWzr8jDiCJiUqG+9iKxb9DNNukEvb7cdyPT896DQ8vSELP4qSPz0iv4d0MNlidYn0XFRtsSy9H67LwW8d+mtgBS6UJ2JRFThn6VIHahNOLJFYKdjm5qhBA+vKmyG6tkOMnHUclNZFVCIop5nAI1ZBcZ3NE2Sm2iBtkoFpdNFKI+6haHh00VzlKc2PBzMLIkviWzrWTH1d3ng6+9/pRrvwUwjy8AE83HwS4ITaeRlbtfDHsssiRbLFA6+rcw3M/Be8QTH2qqfXIvFAN1FFOVnQ6rDq9RnubNVoeWmsSbR1S4Y8rl59FDQ644CkvCFHq+PACoRs5xcIlGhHSEsgBvox2WLwi9GCwjmQfQp9836HzzOifjtFHGz+3WX+JR/GhKb3D6hWlr1Y4He9N6tNnUv9PSH26mVZkiUgmj/9gxLaI/bvKNbqViYJbb3F9fo0NumJMomFOoFomyQXcpT8wwmBxuq6D/SfY82qzPb5KNsM6usci3kc+/edLzn+unoNJpep0UFuMgNZjulrUysIbmZccL2/Ris4Pe17ssHx9XpSLr6HxlJ/aVKwQ/vXo7ZuG7mdPPC36p6e9/jPhn3xcZDN6TLXKMh/bwY6McsNakkFBkTUNLBsGL1+iX5lFiXvENijRKi2eUSAXkwlzW6Z/DxnLe6yR4x8a52HYoyihURGtN62/cZ3NL6V5whiNMbkbAS+3uVW2kSOx9zdM3wMpdnH3pm1vSCeUgNFrltlt7pWt45Bd8bdqV2+rvGv5X8DWTBVWVawW29xsDbOw8i6Z5kpzO9/mVNmB21hCwa9y2Ipar2WOKOWM7lc129exfM2EUOjFgyvpouO8PzE0xffMkaI47N0bmgaLdqUXMDrBmjryvHho1XDRHctbCxMYFLvrA9woZmAHs/jHO80yzdybHUyNoGxY2+IPLTBESa7BBKpSCs2BKS4mlpM7ILDPODeXDm/RWIzloMyAT64bKn/B0CtfMzRSrr8p4cLHOeNCIKksT+bFS6GCHcSh1My9LGKJ8uJ5p0AymmJ556wgSYPyfws0LANHI4bTsfxaJF8z2BFlkWZoB3AUffkbJ5QH6sgcAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;fdf84eae-279c-4d04-88ea-364573358254&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:09:42&lt;/sys_created_on&gt;&lt;sys_id&gt;fe3ea263836722107f44871c7eda1ee0&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:42&lt;/sys_updated_on&gt;&lt;ui_id&gt;33891bea-7abb-49a9-8fe7-44865ea729de&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1YbXPaOBD+KxpPP3LUQICQ+5SQyaUzaTtTuHZuSseVLRl0kSWfJJNQhv9+K1vGvOQINNxcMpdvaLUrPbt6npXR17nHiHfmnZBTvxPGJ7jrt5ot3z9t9nphqxf7p92e34iIV/METih4KhpJZcdTzDNrmM/7imJDCZIK/Z4S+zNo1KNMKSrMYgGuhOmU49lnFwGWaMI4gXnv7Ou3mpdiBYsbqryz+cbUvug4DikH1yFWY2rQpxLlJmozS+2YyChLAF7ASuONW+DSzaB3lzADQRaVX/PovaGCUIATY65pzUuwgFylmi0tUAbyUfDKMGHCwJLnWsuIQV00MhOKaIIZR3fMTBBGBbC6Z9e71+wHgGs17VIxhRpEFisTESOAyFsxB66kMP2umo4vscEDo7LIZGpZackiqotqEhrjjJv+qq1w+JgaJkURYnDIy2jJs0R8KIroLRdYOclMAxia2trYZGFzSDweTOTdpxLsFRN5FV1VuIwwX47iAcUqmlwxyu1RiywJwbfmYWMUCzNjYQIpOHhV+wQ5VLsXeFJO86NMcJoyMQ5SJacs3xDgJ/Uxh0E95vIO4jUbizqObK51OD1cvwL7ZW7+jBWzib+HZSB4UfP0TPc51rpKH+of/JVZ9EUx1uHY6CAnnA2OFEvNOWw1pS7ZRc2prdHbxWdyUvF2Zc1KcfeBFlEQMQN0ETGlgV8OtrVWTRwmuT0gVpKzdHkYspPblu1mNRZ9KCac2BoHiq2gnNPaEARmih5QSAsZB2+pr1N/XV//oKvnoaelSvYW1Lpw/h1xAEl0UDDc5ZZv/hOieUwqfqcThp2w3W1VPOxFMemGcQd3o1bFuztosCrB6jbIG+yKXhrbsnCt4zBN7IGl1AQ0ZZ4Rir6UoHbhdCIJpYQuJzYVAkjfXuXVXSqk+aTrqKAmMhLBYfIZXEJLSNZYXVFmgg1iGmk4rToaSsRcVisRNTSTGUoybcDNwMya+NbutZPnqztHB2e9fJArL0KYxxdge/dFgCti40lg5N4fhnUaWJItFmhbnQdEHqbgPZJZ3mpyOzMnVA3nKMYbOh2URqfR1m6NFpfWlkRXLin/+crlpajBAucsYTkhCh0fXyBkJ6eov0ajKFoRyBH+Ge2xeUnofn8bySGEPvm5S+eV0S+O0Y2df7dpZ41H4bEpvcfuJaUvNjgdHkzq9iup/yekbu+mVbRGJJ2Ff9LIrBD7D5kp1Meaomus0QWlAvVlknIgMtkm/SPeB360PI68FMRgifuhXA4RRuf18+U/18XxRYB3UilurndTSWbHbe17bL9s7cXmW2gchycm4RsMvh6+v6n4231iY++0263OK4Of3NnTO9IkSqapy+1o3b3oQIXNJlBSBH7ucvTevkW/UYNi+96sUaxkkr94QC3GY2p7oHu6GIkpVsjyD40y328RFJMgz9a5Lv+OWp9fC/eYUhLi6HYIvHwsrPQNLIldvKZqCqTYJ9y5ltEjAYldZCA5pJm9aezrjbj9JX+doVrjMS22sEUq1/4+EteUc4nezG0Si5pd5wtFEzyltgwUCkjsA48Cj9XcFjA7xorYcr2Zr6Be1NG5IKjPpYbIQRYB3XWccT6rj8TQIrLL1e0+/eJlGg2KaDSkOBmJ73kuioKQRI4Vxt5isfj2NySQ+oyqGgAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b6d68866836322107f44871c7eda1e06^sys_idNOT IN363ea263836722107f44871c7eda1ee3,363ea263836722107f44871c7eda1ee4,47d68866836322107f44871c7eda1e4a"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;faad2623836722107f44871c7eda1e6e&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;8a76f115-1478-408d-84b0-11d2b0e6281d&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else If"&gt;666e5545c3e232002841b63b12d3ae99&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:09:42&lt;/sys_created_on&gt;&lt;sys_id&gt;363ea263836722107f44871c7eda1ee3&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:43&lt;/sys_updated_on&gt;&lt;ui_id&gt;91a7d2e9-aa0f-4913-8246-f8e0750cafeb&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Vy27bMBD8FYNnQZDkJmh9CxwEKJA2QJPm0gbCiqRsohTJ8mHHFfzvXYqybDQp+sqxN3HIXc4Md6Ce6OBN8O5OXzgnVoosPj1kRKiI4XdPFHScLAjVigkvtKoHICMbkCFu4CcTzkjY3R8RuhaSWT52M2CxxnNLFv0PW4JhQVtAW76hJZ1X5/OqKKrXr8rmfN6UFZsDhwobSmi4xKPLA43Z9YBkP+XndybizluhVuP6euxyewC1ZZFVWWSEP3quGEc+LUjHM9KBYuC13U2I5cBulDwCa6F8EtzBoxPf8MLq7CwebDlKpKMb07IenUpwewkekEqgPtjJOC0od8kcxlsI0i9PsXTgxkSpqcRDIw/VWoZOvU+OkKnBycMEhyS4iUoj9VFHe7vW2w8HlldCDa6Mm1JTkNMKPHrXBB/59IRL3mGjugNj0NHaWL0RQzFy6fKVxEXeSr3FS+N05UAj8RyNhfwK8csBvgcroop32AaLE80GnKD1MInYDm3iZJ8Rt3NLCc4dRaK79dcQKSbJo7g6+RNLqBXGX+DNGz7q2GdPB/tkpvt+iW/tOZtpO/toWPysy5wGiwb53Hnwwe33n0NRzBkytHrFnXuahL/u86L5KZ/LzzPJ+cPQVL8ITXyx38xMURT/Q/PPoRGuTqM+ahsuf8HMPMSApDsnr6lwSO0uYm8P/4y4scPhEvQU2mr7JYo6YvvvWt1XJn0GAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;3aad2623836722107f44871c7eda1e70&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;8a76f115-1478-408d-84b0-11d2b0e6281d&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else If"&gt;666e5545c3e232002841b63b12d3ae99&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-30 06:09:42&lt;/sys_created_on&gt;&lt;sys_id&gt;363ea263836722107f44871c7eda1ee4&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:43&lt;/sys_updated_on&gt;&lt;ui_id&gt;fdf84eae-279c-4d04-88ea-364573358254&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Vy27bMBD8FYNnQZDkJmh9CxwEKJA2QJPm0gbCiqRsohTJ8mHHFfzvXYqybDQp+sqxN3HIXc4Md6Ce6OBN8O5OXzgnVoosPj1kRKiI4XdPFHScLAjVigkvtKoHICMbkCFu4CcTzkjY3R8RuhaSWT52M2CxxnNLFv0PW4JhQVtAW76hJZ1X5/OqKKrXr8rmfN6UFZsDhwobSmi4xKPLA43Z9YBkP+XndybizluhVuP6euxyewC1ZZFVWWSEP3quGEc+LUjHM9KBYuC13U2I5cBulDwCa6F8EtzBoxPf8MLq7CwebDlKpKMb07IenUpwewkekEqgPtjJOC0od8kcxlsI0i9PsXTgxkSpqcRDIw/VWoZOvU+OkKnBycMEhyS4iUoj9VFHe7vW2w8HlldCDa6Mm1JTkNMKPHrXBB/59IRL3mGjugNj0NHaWL0RQzFy6fKVxEXeSr3FS+N05UAj8RyNhfwK8csBvgcroop32AaLE80GnKD1MInYDm3iZJ8Rt3NLCc4dRaK79dcQKSbJo7g6+RNLqBXGX+DNGz7q2GdPB/tkpvt+iW/tOZtpO/toWPysy5wGiwb53Hnwwe33n0NRzBmV2uHYPInB3zV50eSUzyXnmcz8YVyqX8QlvtVvpqUoiv9x+ee4CFenIR+1DZe/YFoeYjTSnZPXVDikdhext4e/RdzY4XAJegpttf0SRR2x/XeVX37HdwYAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;5fb64466836322107f44871c7eda1e2c&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="After Complaint Register"&gt;b6d68866836322107f44871c7eda1e06&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:31&lt;/sys_created_on&gt;&lt;sys_id&gt;47d68866836322107f44871c7eda1e4a&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:43&lt;/sys_updated_on&gt;&lt;ui_id&gt;8a76f115-1478-408d-84b0-11d2b0e6281d&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNhrfAgcBCqQN0KS5tIGwIimbKEWqfNhxBf97l3rZaFy0aXvsTRxyd2eGHKgl2rvGO/ugr6wVa0WWn54iIlTA8LslCmpOloRqxYQTWhUdEJEtSB828JMJ20jYPx4RuhGSGT50a8BgjeOGLNsftgTDgiqBKr2kKc2zRZ4lSfbmIi0XeZlmLAcOOTaUUHKJR1cjjdlth0Q/5ef2TcCtM0Kth/Xt0OV+BLVhgVWaRIQ/O64YRz4VSMsjUoNi4LTZT4jhwO6UPAIboVwvuIZnK77hwGw+DwcrjhLp4Ma0LAaneri6BgdIxVPnzWScFpTb3hzGK/DSrU6x/sBdE6T2JQ5KOVZr6Wv1vneETA1OLsZbJMGboDRQH3RU9xu9+zCyvBGqc2XYlJqCnFbg0LvSu8CnJVzyGhsVNTQNOlo0Rm9FV4xc6ngtcRFXUu9waHhdMdBAPEZjIb5B/LqDH8GIoOIdtsHinmYJVtCie4nYDm3i5BARu7crCdYeRaK7xVcfKPaSB3FF708ooUY07gonb/mg4xC9fNgnb7ptV3jXjrOZNrOPDQufRRpTb9AgF1sHztvD4bNPkpxpHPgyBH/S4nWpuYR5NU+T+fnUXCzOpeZMXl4ZlewXUQn39JtJSZLkf1T+OirCFv0DH7R1w/9hUp5CLPqZk9dUWKT2ELC3458ibOzxcQl6Cu20+RJEHbHDd2Y3jvZzBgAA&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:31&lt;/sys_created_on&gt;&lt;sys_id&gt;47d68866836322107f44871c7eda1e43&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:24:31&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:31&lt;/sys_created_on&gt;&lt;sys_id&gt;b6d68866836322107f44871c7eda1e29&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:24:31&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:31&lt;/sys_created_on&gt;&lt;sys_id&gt;c3d68866836322107f44871c7eda1e30&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CitizenFeedback"&gt;4517bfe1836322107f44871c7eda1ebf&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 15:24:31&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b6d68866836322107f44871c7eda1e06"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;77ae77da832322107f44871c7eda1ed1&lt;/sys_id&gt;&lt;latest_snapshot&gt;b6d68866836322107f44871c7eda1e06&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-yokohama-12-18-2024__patch4-05-14-2025_06-04-2025_1836.zip&lt;/compiler_build&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=77ae77da832322107f44871c7eda1ed1^sys_idNOT IN8bd68866836322107f44871c7eda1e64"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.OncePerRecord&lt;/binding_strategy&gt;&lt;plan&gt;{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"8bd68866836322107f44871c7eda1e64","name":"plan","plan_signature":null}}&lt;/plan&gt;&lt;plan_id&gt;77ae77da832322107f44871c7eda1ed1&lt;/plan_id&gt;&lt;snapshot&gt;48ee22a3836722107f44871c7eda1e85&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 15:24:32&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8bd68866836322107f44871c7eda1e64&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-30 06:09:43&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;5ce5902a83a322107f44871c7eda1ea5&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=77ae77da832322107f44871c7eda1ed1"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1694817583</payload_hash>
+        <record_name>After Complaint Register</record_name>
+        <reverted_from/>
+        <source>4117bfe1836322107f44871c7eda1ec2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 06:31:43</sys_created_on>
+        <sys_id>9543f6e7836722107f44871c7eda1ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198f9acba290000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 06:31:43</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>9d43f6e77267221031562a9003103ec3</update_guid>
+        <update_guid_history>9d43f6e77267221031562a9003103ec3:-1694817583,4b3ee263cf672210d01161ba92290440:1625124271,ae3ea263e7672210b480ff8c886abcad:825117843,43ad2623ab67221084f1ce3881947ea7:-1804576876,da0f4cee186322109a87a25a5ff12c62:-1128844040,95fec8ee366322108ba4d65542dce9b4:669753551,84fec8ee056322100aee19fc55417c1d:-1128844040,13d688663363221071e21edc571b208a:-1921482926,3ad64866756322108e85accba88124e0:1155989437,23b64466036322102c13c2b73ada5a3c:2094599637,73ae77dab52322100b7bed42a2c9b1d7:-1310793046</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 07:15:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>445b7b404dc14800a7698ec2a9756a09</sys_id>
+        <sys_metadata>77ae77da832322107f44871c7eda1ed1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>After Complaint Register</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_scope_delete display_value="">d5d15be73fd04fe0ab585c39f5d9a400</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_77ae77da832322107f44871c7eda1ed1</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_77ae77da832322107f44871c7eda1ed1">9543f6e7836722107f44871c7eda1ec4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 07:15:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

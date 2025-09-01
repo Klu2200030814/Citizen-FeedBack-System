@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allow read for records in x_snc_citizenfee_0_citizentable, for users with role x_snc_citizenfee_0.depthead, and if the ACL script returns true.</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_snc_citizenfee_0_citizentable</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[(function() {
+    if (!current.assigned_to)
+        return false;
+    return gs.getUserID() == current.assigned_to;
+})();
+]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 14:03:54</sys_created_on>
+        <sys_id>0824610483f722107f44871c7eda1e78</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_citizenfee_0_citizentable</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sys_security_acl_0824610483f722107f44871c7eda1e78</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 14:05:54</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

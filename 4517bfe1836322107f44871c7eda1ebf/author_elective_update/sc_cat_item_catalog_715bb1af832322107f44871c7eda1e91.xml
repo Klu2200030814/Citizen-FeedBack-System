@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Citizen Request">b15bb1af832322107f44871c7eda1e8f</sc_cat_item>
+        <sc_catalog display_value="Citizen Service">e937312b832322107f44871c7eda1e03</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 02:27:21</sys_created_on>
+        <sys_id>715bb1af832322107f44871c7eda1e91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Citizen Service.Citizen Request</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_715bb1af832322107f44871c7eda1e91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 02:27:21</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</application>
+        <file_path/>
+        <instance_id>3aa94151979f66905382ff671153af18</instance_id>
+        <instance_name>mav-aug-7844-0031</instance_name>
+        <name>sc_cat_item_catalog_715bb1af832322107f44871c7eda1e91</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Citizen Request">b15bb1af832322107f44871c7eda1e8f</sc_cat_item><sc_catalog display_value="Citizen Service">e937312b832322107f44871c7eda1e03</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-30 02:27:21</sys_created_on><sys_id>715bb1af832322107f44871c7eda1e91</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Citizen Service.Citizen Request</sys_name><sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package><sys_policy/><sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope><sys_update_name>sc_cat_item_catalog_715bb1af832322107f44871c7eda1e91</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-30 02:27:21</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>1770390826</payload_hash>
+        <record_name>Citizen Service.Citizen Request</record_name>
+        <reverted_from/>
+        <source>4117bfe1836322107f44871c7eda1ec2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-30 02:27:21</sys_created_on>
+        <sys_id>f15bb1af832322107f44871c7eda1e94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198f8cd02e00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-30 02:27:21</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>f55bb1af7a2322107b9d4d6847af8293</update_guid>
+        <update_guid_history>f55bb1af7a2322107b9d4d6847af8293:1770390826</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Citizen Service.Citizen Request">398b90cc83b322107f44871c7eda1ef6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-31 08:45:43</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>50152f09b76448a4a852f4c059f9e8e4</sys_id>
+        <sys_metadata>715bb1af832322107f44871c7eda1e91</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Citizen Service.Citizen Request</sys_name>
+        <sys_package display_value="CitizenFeedback" source="x_snc_citizenfee_0">4517bfe1836322107f44871c7eda1ebf</sys_package>
+        <sys_parent display_value="">b15bb1af832322107f44871c7eda1e8f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CitizenFeedback">4517bfe1836322107f44871c7eda1ebf</sys_scope>
+        <sys_scope_delete display_value="">d5d15be73fd04fe0ab585c39f5d9a400</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_715bb1af832322107f44871c7eda1e91</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_715bb1af832322107f44871c7eda1e91">f15bb1af832322107f44871c7eda1e94</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-31 08:45:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
